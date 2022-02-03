@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "2022.css",
+	"sources": [
+		"../scss/2022.scss",
+		"../scss/partials/_variables.scss",
+		"../scss/partials/_pages.scss",
+		"../scss/partials/_overrides.scss"
+	],
+	"sourcesContent": [
+		"@import 'partials/variables';\n@import 'partials/pages';\n@import 'partials/overrides';\n",
+		"@mixin bp($point) {\n  @if $point == mobile {\n    @media only screen and (max-width: 992px) {\n      @content;\n    }\n  }\n  @if $point == desktop {\n    @media only screen and (min-width: 1024px) {\n      @content;\n    }\n  }\n  @if $point == md {\n    @media only screen and (min-width: 769px) and (max-width: 992px) {\n      @content;\n    }\n  }\n  @if $point == lg {\n    @media only screen and (min-width: 993px) and (max-width: 1199px) {\n      @content;\n    }\n  }\n  @if $point == xl {\n    @media only screen and (min-width: 1200px) {\n      @content;\n    }\n  }\n}\n$bluedark: #176ba0;\n$blue: #3f80ab;\n$skyblue: #e0f3ff;\n$white: #ffffff;\n$black: #000000;\n$black90: rgba(0,0,0,0.9);\n$black75: rgba(0,0,0,0.75);\n$black50: rgba(0,0,0,0.5);\n$black25: rgba(0,0,0,0.25);\n$black15: rgba(0,0,0,0.15);\n$black10: rgba(0,0,0,0.1);\n\n$handwriting: \"Alex Brush\";\n\n.mobile-only {\n  @include bp(desktop){\n    display: none !important;\n  }\n}\n",
+		".page-xammple {\n  .text {\n    border: none; //this is temporary\n  }\n}\n",
+		""
+	],
+	"names": [],
+	"mappings": "ACOI,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,MAAM;;EAkC7C,AAAA,YAAY,CAAC;IAET,OAAO,EAAE,eAAe,GAE3B;;;AC7CD,AACE,aADW,CACX,KAAK,CAAC;EACJ,MAAM,EAAE,IAAI,GACb"
+}

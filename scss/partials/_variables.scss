@@ -1,3 +1,35 @@
+$blue:        #3d42f5;
+$indigo:      #2d1582;
+$purple:      #6f42c1;
+$pink:        #e83e8c;
+$red:         #ed4c78;
+$orange:      #fd7e14;
+$orange-dark: #f15a29;
+$yellow:      #f5ca99;
+$green:       #28a745;
+$teal:        #00c9a7;
+$teal-dark:   #024c60;
+$cyan:        #09a5be;
+$white:       #ffffff;
+$gray:        #8c98a4;
+$gray-dark:   #71869d;
+$primary:     #3d42f5;
+$secondary:   #71869d;
+$success:     #00c9a7;
+$info:        #09a5be;
+$warning:     #f5ca99;
+$danger:      #ed4c78;
+$light:       #f7faff;
+$dark:        #16212a;
+$black:       #000000;
+$indigo:      #2d1582;
+$black90:     rgba(0,0,0,0.9);
+$black75:     rgba(0,0,0,0.75);
+$black50:     rgba(0,0,0,0.5);
+$black25:     rgba(0,0,0,0.25);
+$black15:     rgba(0,0,0,0.15);
+$black10:     rgba(0,0,0,0.1);
+
 @mixin bp($point) {
   @if $point == mobile {
     @media only screen and (max-width: 992px) {
@@ -25,19 +57,6 @@
     }
   }
 }
-$bluedark: #176ba0;
-$blue: #3f80ab;
-$skyblue: #e0f3ff;
-$white: #ffffff;
-$black: #000000;
-$black90: rgba(0,0,0,0.9);
-$black75: rgba(0,0,0,0.75);
-$black50: rgba(0,0,0,0.5);
-$black25: rgba(0,0,0,0.25);
-$black15: rgba(0,0,0,0.15);
-$black10: rgba(0,0,0,0.1);
-
-$handwriting: "Alex Brush";
 
 .mobile-only {
   @include bp(desktop){
