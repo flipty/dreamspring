@@ -1,3 +1,4 @@
+//COLORS
 $blue:        #3d42f5;
 $indigo:      #2d1582;
 $purple:      #6f42c1;
@@ -30,7 +31,8 @@ $black25:     rgba(0,0,0,0.25);
 $black15:     rgba(0,0,0,0.15);
 $black10:     rgba(0,0,0,0.1);
 
-@mixin bp($point) {
+//BREAKPOINTS
+@mixin breakpoint($point) {
   @if $point == mobile {
     @media only screen and (max-width: 992px) {
       @content;
@@ -59,7 +61,7 @@ $black10:     rgba(0,0,0,0.1);
 }
 
 .mobile-only {
-  @include bp(desktop){
+  @include breakpoint(desktop){
     display: none !important;
   }
 }
