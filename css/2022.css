@@ -4,7 +4,11 @@
   }
 }
 
-@media only screen and (max-width: 992px) {
+section.stripe-blue {
+  background: #dbf5fe;
+}
+
+@media only screen and (max-width: 1023px) {
   .donate-hero-iframe-container {
     padding-left: 30px;
   }
@@ -21,7 +25,7 @@
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1023px) {
   .donate_hero_iframe .full-image {
     background-position: 43% 0;
   }
@@ -43,7 +47,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1023px) {
   .stats-area .button-container a.btn {
     font-size: 22px;
     bottom: 50px;
@@ -52,4 +56,356 @@
 
 .stats-area .button-container a.btn:hover {
   background: #f15a29;
+}
+
+@keyframes entrepreneurship-desktop {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes poverty-desktop {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.2;
+    transform: scale(0.65);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes entrepreneurship-mobile {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.75);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(0.75);
+  }
+}
+
+@keyframes poverty-mobile {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.2;
+    transform: scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #circle-1 {
+    position: relative;
+    z-index: 99;
+    left: 75px;
+    animation: entrepreneurship-desktop 5s infinite;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  #circle-1 {
+    position: relative;
+    z-index: 99;
+    top: -75px;
+    animation: entrepreneurship-mobile 5s infinite;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #circle-2 {
+    position: relative;
+    z-index: 98;
+    left: -75px;
+    animation: poverty-desktop 5s infinite;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  #circle-2 {
+    position: relative;
+    top: -150px;
+    z-index: 98;
+    animation: poverty-mobile 5s infinite;
+  }
+}
+
+#main.product-detail p,
+#main.application-readiness p {
+  line-height: 1.7;
+}
+
+#main.product-detail .intro,
+#main.application-readiness .intro {
+  margin-top: 60px;
+  text-align: center;
+}
+
+#main.product-detail .benefits,
+#main.application-readiness .benefits {
+  margin-top: 60px;
+}
+
+#main.product-detail .benefits .content,
+#main.application-readiness .benefits .content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+  position: relative;
+}
+
+@media only screen and (max-width: 1023px) {
+  #main.product-detail .benefits .content,
+  #main.application-readiness .benefits .content {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+#main.product-detail .benefits .content a,
+#main.application-readiness .benefits .content a {
+  margin-top: 40px;
+  min-width: 200px;
+}
+
+@media only screen and (max-width: 1023px) {
+  #main.product-detail .benefits .content a,
+  #main.application-readiness .benefits .content a {
+    position: static;
+    left: auto;
+    bottom: auto;
+    display: block;
+    width: 100%;
+  }
+}
+
+#main.product-detail .benefits .items .item,
+#main.application-readiness .benefits .items .item {
+  margin-bottom: 30px;
+}
+
+#main.product-detail .benefits .items .item .heading,
+#main.application-readiness .benefits .items .item .heading {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#main.product-detail .benefits .items .item .heading h4,
+#main.application-readiness .benefits .items .item .heading h4 {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+#main.product-detail .benefits .items .item .heading img,
+#main.application-readiness .benefits .items .item .heading img {
+  width: 55px;
+  height: auto;
+}
+
+#main.product-detail .image,
+#main.application-readiness .image {
+  margin-top: 60px;
+}
+
+#main.product-detail .image .inner img,
+#main.application-readiness .image .inner img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+#main.product-detail .features,
+#main.application-readiness .features {
+  padding: 60px 0;
+}
+
+@media only screen and (max-width: 1023px) {
+  #main.product-detail .features h4,
+  #main.application-readiness .features h4 {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+#main.product-detail .features .terms,
+#main.application-readiness .features .terms {
+  list-style-type: none;
+  list-style: none;
+  padding-left: 0;
+}
+
+#main.product-detail .features .terms li,
+#main.application-readiness .features .terms li {
+  background-color: #3ab949;
+  padding: 15px;
+  color: white;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#main.product-detail .features .terms li em,
+#main.application-readiness .features .terms li em {
+  font-style: normal;
+  font-weight: normal;
+  font-size: .5em;
+  margin: 0 10px;
+}
+
+#main.product-detail .features .card span img,
+#main.application-readiness .features .card span img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+#main.product-detail .qualification,
+#main.application-readiness .qualification {
+  padding: 60px 0 0 0;
+}
+
+#main.product-detail .qualification .intro-heading .heading,
+#main.application-readiness .qualification .intro-heading .heading {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#main.product-detail .qualification .intro-heading .heading h4,
+#main.application-readiness .qualification .intro-heading .heading h4 {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+#main.product-detail .qualification .intro-heading .heading img,
+#main.application-readiness .qualification .intro-heading .heading img {
+  width: 55px;
+  height: auto;
+}
+
+#main.product-detail .qualification ul,
+#main.application-readiness .qualification ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#main.product-detail .product-cta,
+#main.application-readiness .product-cta {
+  text-align: center;
+  padding: 60px 0;
+}
+
+#main.product-detail .more-info,
+#main.application-readiness .more-info {
+  padding: 60px 0;
+}
+
+#main.product-detail .more-info .item-1,
+#main.application-readiness .more-info .item-1 {
+  border-right: solid 1px #ccc;
+}
+
+@media only screen and (max-width: 1023px) {
+  #main.product-detail .more-info .item-1,
+  #main.application-readiness .more-info .item-1 {
+    padding-bottom: 30px;
+    border-right: none;
+  }
+}
+
+#main.product-detail .more-info .links a,
+#main.application-readiness .more-info .links a {
+  display: inline-block;
+  margin: 0 1em;
+  font-weight: bold;
+}
+
+#main.product-detail .more-info .button,
+#main.application-readiness .more-info .button {
+  padding-top: 30px;
+}
+
+#main.product-detail .how-to-apply,
+#main.application-readiness .how-to-apply {
+  padding: 0 0 60px 0;
+}
+
+#main.product-detail .how-to-apply .items,
+#main.application-readiness .how-to-apply .items {
+  list-style: none;
+  padding: 0;
+  margin-top: 60px;
+}
+
+#main.product-detail .how-to-apply .items li,
+#main.application-readiness .how-to-apply .items li {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#main.product-detail .how-to-apply .items li span,
+#main.application-readiness .how-to-apply .items li span {
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 16px);
+  display: block;
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 29px;
+  font-weight: bold;
+}
+
+#main.product-detail .how-to-apply .items li img,
+#main.application-readiness .how-to-apply .items li img {
+  width: 150px;
+}
+
+#main.product-detail .how-to-apply .items li label,
+#main.application-readiness .how-to-apply .items li label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#main.product-detail .questions,
+#main.application-readiness .questions {
+  padding: 60px 0;
+}
+
+#main.product-detail .questions .button a,
+#main.application-readiness .questions .button a {
+  font-weight: bold;
 }

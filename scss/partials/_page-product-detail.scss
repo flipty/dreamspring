@@ -1,0 +1,226 @@
+// PRODUCT DETAIL & APPLICATION READINESS
+
+#main.product-detail,
+#main.application-readiness {
+    p {
+        line-height: 1.7;
+    }
+
+    .intro {
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .benefits {
+        margin-top: 60px;
+
+        .content {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            align-content: center;
+            position: relative;
+
+            @include breakpoint(mobile) {
+                text-align: center;
+                padding-bottom: 30px;
+            }
+
+            a {
+                margin-top: 40px;
+                min-width: 200px;
+                @include breakpoint(mobile) {
+                    position: static;
+                    left: auto;
+                    bottom: auto;
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+
+        .items {
+            .item {
+                margin-bottom: 30px;
+
+                .heading {
+                    display: flex;
+                    flex-flow: row;
+                    align-items: center;
+                    margin-bottom: 15px;
+
+                    h4 {
+                        margin-bottom: 0;
+                        margin-left: 15px;
+                    }
+
+                    img {
+                        width: 55px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .image {
+        margin-top: 60px;
+        .inner {
+            img {
+                max-width: 100%;
+                width: 100%; 
+                height: auto;
+            }
+        }
+    }
+
+    .features {
+        padding: 60px 0;
+
+        h4 {
+            @include breakpoint(mobile) {
+                margin-top: 30px;
+                text-align: center;
+            }
+        }
+
+        .terms {
+            list-style-type: none;
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                background-color: #3ab949;
+                padding: 15px;
+                color: white;
+                display: flex;
+                flex-flow: row;
+                align-items: center;
+                font-size: 2em;
+                margin-bottom: 10px;
+                font-weight: bold;
+
+                em {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: .5em;
+                    margin: 0 10px;
+                }
+            }
+        }
+        .card {
+            span {
+                img {
+                    border-top-left-radius: 16px;
+                    border-top-right-radius: 16px;
+                }
+            }
+        }
+    }
+
+    .qualification {
+        padding: 60px 0 0 0;
+
+        .intro-heading {
+            .heading {
+                display: flex;
+                flex-flow: row;
+                align-items: center;
+                margin-bottom: 15px;
+
+                h4 {
+                    margin-bottom: 0;
+                    margin-left: 15px;
+                }
+
+                img {
+                    width: 55px;
+                    height: auto;
+                }
+            }
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+    }
+
+    .product-cta {
+        text-align: center;
+        padding: 60px 0;
+    }
+
+    .more-info {
+        padding: 60px 0;
+
+        .item-1 {
+            border-right: solid 1px #ccc;
+
+            @include breakpoint(mobile) {
+                padding-bottom: 30px;
+                border-right: none;
+            }
+
+        }
+
+        .links {
+            a {
+                display: inline-block;
+                margin: 0 1em;
+                font-weight: bold;
+            }
+        }
+
+        .button {
+            padding-top: 30px;
+        }
+    }
+
+    .how-to-apply {
+        padding: 0 0 60px 0;
+
+        .items {
+            list-style: none;
+            padding: 0;
+            margin-top: 60px;
+
+            li {
+                position: relative;
+                margin-bottom: 30px;
+
+                span {
+                    position: absolute;
+                    top: -10px;
+                    left: calc(50% - 16px);
+                    display: block;
+                    background-color: white;
+                    border: solid 2px black;
+                    border-radius: 50%;
+                    width: 32px;
+                    height: 32px;
+                    text-align: center;
+                    line-height: 29px;
+                    font-weight: bold;
+                }
+
+                img {
+                    width: 150px;
+                }
+
+                label {
+                    margin-top: 10px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .questions {
+        padding: 60px 0;
+        .button {
+            a {
+                font-weight: bold;
+            }
+        }
+    }
+}

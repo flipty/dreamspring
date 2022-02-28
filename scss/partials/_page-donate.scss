@@ -1,0 +1,158 @@
+// DONATION PAGE
+.donate-hero-iframe-container {
+    @include breakpoint(mobile) {
+        padding-left: 30px;
+
+        iframe {
+            padding-left: 15px;
+        }
+    }
+
+    .iframe-wrapper {
+        @include breakpoint(desktop) {
+            width: 430px;
+            margin: 0 auto;
+            margin-right: 0;
+        }
+    }
+}
+
+.donate_hero_iframe {
+    .full-image {
+        @include breakpoint(mobile) {
+            background-position: 43% 0; //test
+        }
+    }
+}
+
+.stats-area {
+    .button-container {
+        position: relative;
+
+        a.btn {
+            background: $orange;
+            color: $white;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 36px;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            box-shadow: 0 0 10px $black25;
+
+            @include breakpoint(mobile) {
+                font-size: 22px;
+                bottom: 50px;
+            }
+
+            &:hover {
+                background: $orange-dark;
+            }
+        }
+    }
+}
+
+@keyframes entrepreneurship-desktop {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes poverty-desktop {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.2;
+        transform: scale(0.65);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes entrepreneurship-mobile {
+    0% {
+        opacity: 0.2;
+        transform: scale(0.75);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: scale(0.75);
+    }
+}
+
+@keyframes poverty-mobile {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.2;
+        transform: scale(0.75);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#circle-1 {
+
+    //entrepreneurship
+    @include breakpoint(desktop) {
+        position: relative;
+        z-index: 99;
+        left: 75px;
+        animation: entrepreneurship-desktop 5s infinite;
+    }
+
+    @include breakpoint(mobile) {
+        position: relative;
+        z-index: 99;
+        top: -75px;
+        animation: entrepreneurship-mobile 5s infinite;
+    }
+
+}
+
+#circle-2 {
+
+    //poverty
+    @include breakpoint(desktop) {
+        position: relative;
+        z-index: 98;
+        left: -75px;
+        animation: poverty-desktop 5s infinite;
+    }
+
+    @include breakpoint(mobile) {
+        position: relative;
+        top: -150px;
+        z-index: 98;
+        animation: poverty-mobile 5s infinite;
+    }
+}

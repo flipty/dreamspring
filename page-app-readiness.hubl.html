@@ -1,0 +1,15 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Application Readiness
+  screenshotPath: ../static/img/preview/index.jpg
+-->
+{% extends "./layout/base.html" %}
+
+{% block body %}
+<main id="main">
+  {% widget_container "main" %}
+  {% module "hero_19" path='../module/hero_19', label="Hero 19" %}
+  {% end_widget_container %}
+</main>
+{% endblock body %}
