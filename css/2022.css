@@ -325,6 +325,12 @@ section.stripe-blue {
   padding: 60px 0;
 }
 
+#main.product-detail .product-cta .carousel p.mb-0,
+#main.application-readiness .product-cta .carousel p.mb-0 {
+  font-size: 12px;
+  line-height: 15px;
+}
+
 #main.product-detail .more-info,
 #main.application-readiness .more-info {
   padding: 60px 0;
@@ -400,6 +406,13 @@ section.stripe-blue {
   font-weight: bold;
 }
 
+#main.product-detail .how-to-apply .items li label em,
+#main.application-readiness .how-to-apply .items li label em {
+  display: block;
+  font-size: 85%;
+  font-style: normal;
+}
+
 #main.product-detail .questions,
 #main.application-readiness .questions {
   padding: 60px 0;
@@ -408,4 +421,21 @@ section.stripe-blue {
 #main.product-detail .questions .button a,
 #main.application-readiness .questions .button a {
   font-weight: bold;
+}
+
+.pre-header {
+  width: 100%;
+  background-color: #fedabb;
+  text-align: center;
+}
+
+.pre-header p {
+  color: #dc6502;
+  padding: 0.33em 0;
+}
+
+.pre-header p a {
+  font-weight: bold;
+  color: #c35a02;
+  text-decoration: underline;
 }
