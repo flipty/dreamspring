@@ -108,8 +108,67 @@
       <p>
         With affordable rates, clear terms, and flexible products, we have a loan product for you. Our term loans range from $1,000 to $2,000,000 and we also have lines of credit to provide the type of funding you need. 
       </p>
-      <div class="carousel">
-        CAROUSEL GOES HERE
+      <div class="product-grid">
+
+        <div class="product">
+          <img src="https://www.placecage.com/500/300" alt="Alt Text Here">
+          <div class="content">
+            <h3>Title goes here...</h3>
+            <div class="compressed">
+              <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptatibus rem ut eaque vel sequi commodi ipsam voluptate, atque quasi eius? Commodi quam excepturi harum exercitationem ipsum enim accusamus nam.
+              </p>
+              <div class="expand-trigger">
+                <a href="#"><em>More</em><strong>Less</strong> Details<span>&gt;</span></a>
+              </div>
+              <div class="extra">
+                <h4>Here's the rest of the content...</h4>
+                <ul>
+                  <li>Here's a list.</li>
+                  <li>Here's a list.</li>
+                  <li>Here's a list.</li>
+                  <li>Here's a list.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <a href="#">Test of button</a>
+          </div>
+        </div>
+        
+        <div class="product">
+          <img src="https://www.placecage.com/500/300" alt="Alt Text Here">
+          <div class="content">
+            <h3>Title goes here...</h3>
+            <div class="compressed">
+              <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptatibus rem ut eaque vel sequi commodi ipsam voluptate, atque quasi eius? Commodi quam excepturi harum exercitationem ipsum enim accusamus nam.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptatibus rem ut eaque vel sequi commodi ipsam voluptate, atque quasi eius? Commodi quam excepturi harum exercitationem ipsum enim accusamus nam.
+              </p>
+              <div class="expand-trigger">
+                <a href="#"><em>More</em><strong>Less</strong> Details<span>&gt;</span></a>
+              </div>
+              <div class="extra">
+                <h4>Here's the rest of the content...</h4>
+                <ul>
+                  <li>Here's a list.</li>
+                  <li>Here's a list.</li>
+                  <li>Here's a list.</li>
+                  <li>Here's a list.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <a href="#">Test of button</a>
+          </div>
+        </div>
+
+        <!--
+        {% module "module_164609670941448" path="/carbon/module/Product Carousel", label="Product Carousel" %}
+        {% module "prodcut_list_slider" path='../module/product_list_slider', label="Product List Slider" %}
+        -->
       </div>
     </div>
   </section>

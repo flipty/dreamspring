@@ -14,10 +14,26 @@ var dreamspring = {
 
     circles: function(){
       var $circle = $('#circle-animate').find('.rounded-circle');
-      // console.log('CIRCLES!');
       $circle.each(function(){
         var $index = $(this).index();
-        // console.log($(this));
+      });
+    },
+
+    productGrid: function(){
+      var $content = $('.product .content');
+      $content.each(function(){
+        var $expandTrigger = $(this).find('.expand-trigger a');
+        var $expandable = $(this).find('.extra');
+        $expandTrigger.on('click', function(e){
+          var $moreText = $(this).find('em');
+          var $lessText = $(this).find('strong');
+          $moreText.toggle();
+          $lessText.toggle();
+          $(this).parents('.content').toggleClass('expanded');
+          e.preventDefault();
+          $expandable.slideToggle();
+        });
+
       });
     }
 
@@ -26,4 +42,5 @@ var dreamspring = {
 $(document).ready(function(){
     dreamspring.hamburger();
     dreamspring.circles();
+    dreamspring.productGrid();
 });
