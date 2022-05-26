@@ -24,7 +24,6 @@
     {%- set month_year_list2 = month_year_list.append(entry) -%}
     {%- endunless -%}
 {%- endfor -%}
-        
     <h3>Archive</h3>
     <ul>
         {# outside of posts loop. loop month_year_list tuples #}
