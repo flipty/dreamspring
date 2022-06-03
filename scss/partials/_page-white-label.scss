@@ -1,0 +1,129 @@
+.white-label {
+    section {
+        padding: 60px 0;
+    }
+    .partner-header {
+        .logo {
+            text-align: center;
+            img {
+                margin: 15px auto;
+            }
+        }
+        .logo-partner {
+            border-right: solid 2px #ccc;
+            @include breakpoint(mobile){
+                border-right: none;
+                border-bottom: solid 2px #ccc;
+            }
+        }
+    }
+    .partner-hero {
+        background-color: #F7F6F8;
+        padding-top: 0;
+        .inner {
+            background-size: cover;
+            position: relative;
+            min-height: 700px;
+            h1 {
+                background-color: $black75;
+                position: relative;
+                top: 7vh;
+                color: $white;
+                font-size: 85px;
+                line-height: 1em;
+                width: 800px;
+                padding: 1em 2em;
+            }
+        }
+        .content {
+            padding: 60px 0;
+            h2 {
+                font-size: 60px;
+            }
+            a.btn {
+                font-size: 34px;
+            }
+        }
+    }
+    .partner-intro {
+        .partner-block {
+            padding: 30px;
+            margin: 50px 0;
+            border-radius: 8px;
+            background-color: $white;
+            box-shadow: 0 0 10px $black15;
+            .inner {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+                .image {
+                    width: calc(33% - 30px);
+                    img {
+                        max-width: 100%;
+                        margin: 15px;
+                    }
+                }
+                .content {
+                    width: 66%;
+                    font-size: 23px;
+                    > * {
+                        padding: 15px;
+                        margin: 0;
+                    }
+                }
+            }
+            &.logo-right {
+                .inner {
+                    flex-flow: row-reverse wrap;
+                }
+            }
+        }
+        .pullquote {
+            margin: 50px 0 0;
+            .inner {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+                .image {
+                    width: 33%;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                .content {
+                    width: 63%;
+                    font-size: 24px;
+                    color: #666;
+                    span.quote {
+                        display: block;
+                        color: #23bfee;
+                        font-size: 150px;
+                        font-weight: 900;
+                        line-height: 25px;
+                    }
+
+                }
+            }
+        }
+
+    }
+    .partner-states {
+        background-color: #F7F6F8;
+    }
+    .partner-products {
+        .product-grid {
+            > div {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+            }
+
+        }
+    }
+    .partner-questions {
+        
+    }
+
+}

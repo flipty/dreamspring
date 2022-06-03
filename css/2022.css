@@ -900,6 +900,144 @@ section.stripe-blue {
   margin-bottom: 30px;
 }
 
+.white-label section {
+  padding: 60px 0;
+}
+
+.white-label .partner-header .logo {
+  text-align: center;
+}
+
+.white-label .partner-header .logo img {
+  margin: 15px auto;
+}
+
+.white-label .partner-header .logo-partner {
+  border-right: solid 2px #ccc;
+}
+
+@media only screen and (max-width: 1023px) {
+  .white-label .partner-header .logo-partner {
+    border-right: none;
+    border-bottom: solid 2px #ccc;
+  }
+}
+
+.white-label .partner-hero {
+  background-color: #F7F6F8;
+  padding-top: 0;
+}
+
+.white-label .partner-hero .inner {
+  background-size: cover;
+  position: relative;
+  min-height: 700px;
+}
+
+.white-label .partner-hero .inner h1 {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: relative;
+  top: 7vh;
+  color: #ffffff;
+  font-size: 85px;
+  line-height: 1em;
+  width: 800px;
+  padding: 1em 2em;
+}
+
+.white-label .partner-hero .content {
+  padding: 60px 0;
+}
+
+.white-label .partner-hero .content h2 {
+  font-size: 60px;
+}
+
+.white-label .partner-hero .content a.btn {
+  font-size: 34px;
+}
+
+.white-label .partner-intro .partner-block {
+  padding: 30px;
+  margin: 50px 0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.white-label .partner-intro .partner-block .inner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.white-label .partner-intro .partner-block .inner .image {
+  width: calc(33% - 30px);
+}
+
+.white-label .partner-intro .partner-block .inner .image img {
+  max-width: 100%;
+  margin: 15px;
+}
+
+.white-label .partner-intro .partner-block .inner .content {
+  width: 66%;
+  font-size: 23px;
+}
+
+.white-label .partner-intro .partner-block .inner .content > * {
+  padding: 15px;
+  margin: 0;
+}
+
+.white-label .partner-intro .partner-block.logo-right .inner {
+  flex-flow: row-reverse wrap;
+}
+
+.white-label .partner-intro .pullquote {
+  margin: 50px 0 0;
+}
+
+.white-label .partner-intro .pullquote .inner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.white-label .partner-intro .pullquote .inner .image {
+  width: 33%;
+}
+
+.white-label .partner-intro .pullquote .inner .image img {
+  max-width: 100%;
+}
+
+.white-label .partner-intro .pullquote .inner .content {
+  width: 63%;
+  font-size: 24px;
+  color: #666;
+}
+
+.white-label .partner-intro .pullquote .inner .content span.quote {
+  display: block;
+  color: #23bfee;
+  font-size: 150px;
+  font-weight: 900;
+  line-height: 25px;
+}
+
+.white-label .partner-states {
+  background-color: #F7F6F8;
+}
+
+.white-label .partner-products .product-grid > div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
 .pre-header {
   width: 100%;
   background-color: #fedabb;
