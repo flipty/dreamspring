@@ -904,12 +904,24 @@ section.stripe-blue {
   padding: 60px 0;
 }
 
+@media only screen and (max-width: 1023px) {
+  .white-label section {
+    padding: 30px 0;
+  }
+}
+
 .white-label .partner-header .logo {
   text-align: center;
 }
 
 .white-label .partner-header .logo img {
   margin: 15px auto;
+}
+
+@media only screen and (max-width: 1023px) {
+  .white-label .partner-header .logo img {
+    max-width: 250px;
+  }
 }
 
 .white-label .partner-header .logo-partner {
@@ -923,26 +935,23 @@ section.stripe-blue {
   }
 }
 
+@media only screen and (max-width: 1023px) and (max-width: 1023px) {
+  .white-label .partner-header .logo-partner img {
+    max-width: 250px;
+  }
+}
+
 .white-label .partner-hero {
   background-color: #F7F6F8;
   padding-top: 0;
 }
 
-.white-label .partner-hero .inner {
-  background-size: cover;
-  position: relative;
-  min-height: 700px;
+.white-label .partner-hero .welcome {
+  background-color: #ffffff;
 }
 
-.white-label .partner-hero .inner h1 {
-  background-color: rgba(0, 0, 0, 0.75);
-  position: relative;
-  top: 7vh;
-  color: #ffffff;
-  font-size: 85px;
-  line-height: 1em;
-  width: 800px;
-  padding: 1em 2em;
+.white-label .partner-hero .welcome h1 {
+  font-size: 65px;
 }
 
 .white-label .partner-hero .content {
@@ -953,8 +962,21 @@ section.stripe-blue {
   font-size: 60px;
 }
 
+@media only screen and (max-width: 1023px) {
+  .white-label .partner-hero .content h2 {
+    width: 100%;
+    font-size: 24px;
+  }
+}
+
 .white-label .partner-hero .content a.btn {
   font-size: 34px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .white-label .partner-hero .content a.btn {
+    font-size: 24px;
+  }
 }
 
 .white-label .partner-intro .partner-block {
@@ -976,14 +998,33 @@ section.stripe-blue {
   width: calc(33% - 30px);
 }
 
+@media only screen and (max-width: 1023px) {
+  .white-label .partner-intro .partner-block .inner .image {
+    width: 100%;
+  }
+}
+
 .white-label .partner-intro .partner-block .inner .image img {
   max-width: 100%;
   margin: 15px;
 }
 
+@media only screen and (max-width: 1023px) {
+  .white-label .partner-intro .partner-block .inner .image img {
+    margin: 0 auto;
+  }
+}
+
 .white-label .partner-intro .partner-block .inner .content {
   width: 66%;
   font-size: 23px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .white-label .partner-intro .partner-block .inner .content {
+    width: 100%;
+    font-size: 18px;
+  }
 }
 
 .white-label .partner-intro .partner-block .inner .content > * {
@@ -1010,6 +1051,12 @@ section.stripe-blue {
   width: 33%;
 }
 
+@media only screen and (max-width: 1023px) {
+  .white-label .partner-intro .pullquote .inner .image {
+    width: 100%;
+  }
+}
+
 .white-label .partner-intro .pullquote .inner .image img {
   max-width: 100%;
 }
@@ -1020,6 +1067,12 @@ section.stripe-blue {
   color: #666;
 }
 
+@media only screen and (max-width: 1023px) {
+  .white-label .partner-intro .pullquote .inner .content {
+    width: 100%;
+  }
+}
+
 .white-label .partner-intro .pullquote .inner .content span.quote {
   display: block;
   color: #23bfee;
@@ -1028,14 +1081,83 @@ section.stripe-blue {
   line-height: 25px;
 }
 
+.white-label .partner-intro .pullquote.image_right .inner {
+  flex-flow: row-reverse wrap;
+}
+
+.white-label .partner-intro .pullquote.image_right .inner .content span.quote {
+  text-align: right;
+}
+
+.white-label .partner-intro .pullquote.no_image .inner .image {
+  display: none;
+}
+
+.white-label .partner-intro .pullquote.no_image .inner .content {
+  width: 100%;
+}
+
+.white-label .partner-intro .pullquote.no_image .inner .content span.quote {
+  text-align: right;
+}
+
 .white-label .partner-states {
   background-color: #F7F6F8;
 }
 
-.white-label .partner-products .product-grid > div {
+@media only screen and (max-width: 1023px) {
+  .white-label .partner-states .content {
+    text-align: center;
+  }
+}
+
+.white-label .partner-products .product-grid {
+  justify-content: center;
+}
+
+.white-label .partner-products .product-grid .content .extra ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.white-label .partner-products .product-grid .content .extra ul li {
+  list-style: none;
+}
+
+.white-label .partner-products .product-grid .content .extra ul li:before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: 7px;
+  height: 28px;
+  width: 28px;
+  margin-right: 7px;
+  background-image: url("https://go.dreamspring.org/hubfs/check.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.white-label .partner-questions #hs_cos_wrapper_partner_form .inputs-list.multi-container {
+  list-style: none;
+  padding-left: 0;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.white-label .partner-questions #hs_cos_wrapper_partner_form .hs-error-msgs {
+  padding-left: 0;
+  list-style: none;
+}
+
+.white-label .partner-questions #hs_cos_wrapper_partner_form .hs-error-msgs li {
+  background-color: #f5ca99;
+}
+
+.white-label .partner-questions #hs_cos_wrapper_partner_form .hs-error-msgs li .hs-error-msg {
+  display: block;
+  padding: 15px;
+  font-weight: bold;
 }
 
 .pre-header {

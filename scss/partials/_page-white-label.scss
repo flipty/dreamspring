@@ -1,12 +1,18 @@
 .white-label {
     section {
         padding: 60px 0;
+        @include breakpoint(mobile){
+            padding: 30px 0;
+        }
     }
     .partner-header {
         .logo {
             text-align: center;
             img {
                 margin: 15px auto;
+                @include breakpoint(mobile){
+                    max-width: 250px;
+                }
             }
         }
         .logo-partner {
@@ -14,34 +20,41 @@
             @include breakpoint(mobile){
                 border-right: none;
                 border-bottom: solid 2px #ccc;
+                img {
+                    @include breakpoint(mobile){
+                    max-width: 250px;
+                    }
+
+                }
             }
         }
     }
     .partner-hero {
         background-color: #F7F6F8;
         padding-top: 0;
-        .inner {
-            background-size: cover;
-            position: relative;
-            min-height: 700px;
+        .welcome {
+            background-color: $white;
             h1 {
-                background-color: $black75;
-                position: relative;
-                top: 7vh;
-                color: $white;
-                font-size: 85px;
-                line-height: 1em;
-                width: 800px;
-                padding: 1em 2em;
+                font-size: 65px;
+            }
+            img {
+
             }
         }
         .content {
             padding: 60px 0;
             h2 {
                 font-size: 60px;
+                @include breakpoint(mobile){
+                    width: 100%;
+                    font-size: 24px;
+                }
             }
             a.btn {
                 font-size: 34px;
+                @include breakpoint(mobile){
+                    font-size: 24px;
+                }
             }
         }
     }
@@ -59,14 +72,24 @@
                 align-items: center;
                 .image {
                     width: calc(33% - 30px);
+                    @include breakpoint(mobile){
+                        width: 100%;
+                    }
                     img {
                         max-width: 100%;
                         margin: 15px;
+                        @include breakpoint(mobile){
+                            margin: 0 auto;
+                        }
                     }
                 }
                 .content {
                     width: 66%;
                     font-size: 23px;
+                    @include breakpoint(mobile){
+                        width: 100%;
+                        font-size: 18px;
+                    }
                     > * {
                         padding: 15px;
                         margin: 0;
@@ -88,6 +111,9 @@
                 align-items: center;
                 .image {
                     width: 33%;
+                    @include breakpoint(mobile){
+                        width: 100%;
+                    }
                     img {
                         max-width: 100%;
                     }
@@ -96,6 +122,9 @@
                     width: 63%;
                     font-size: 24px;
                     color: #666;
+                    @include breakpoint(mobile){
+                        width: 100%;
+                    }
                     span.quote {
                         display: block;
                         color: #23bfee;
@@ -104,6 +133,29 @@
                         line-height: 25px;
                     }
 
+                } 
+            }
+            &.image_right {
+                .inner {
+                    flex-flow: row-reverse wrap;
+                    .content {
+                        span.quote {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+            &.no_image {
+                .inner {
+                    .image {
+                        display: none;
+                    }
+                    .content {
+                        width: 100%;
+                        span.quote {
+                            text-align: right;
+                        }
+                    }
                 }
             }
         }
@@ -111,19 +163,69 @@
     }
     .partner-states {
         background-color: #F7F6F8;
-    }
-    .partner-products {
-        .product-grid {
-            > div {
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-between;
+        .content {
+            @include breakpoint(mobile){
+                text-align: center;
             }
 
         }
     }
+    .partner-products {
+        .product-grid {
+            justify-content: center;
+            .content {
+                .extra {
+                    ul {
+                        padding-left: 0;
+                        list-style: none;
+                        li {
+                            list-style: none;
+                            &:before {
+                                content: '';
+                                display: inline-block;
+                                position: relative;
+                                top: 7px;
+                                height: 28px;
+                                width: 28px;
+                                margin-right: 7px;
+                                background-image: url('https://go.dreamspring.org/hubfs/check.jpg');
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                }
+            }
+            .button {
+            }
+        }
+    }
     .partner-questions {
-        
+        #hs_cos_wrapper_partner_form {
+            .inputs-list.multi-container {
+                list-style: none;
+                padding-left: 0;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                li {
+                    label {
+                    }
+                }
+            }
+            .hs-error-msgs {
+                padding-left: 0;
+                list-style: none;
+                li {
+                    background-color: $warning;
+                    .hs-error-msg {
+                        display: block;
+                        padding: 15px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
     }
 
 }
