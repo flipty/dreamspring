@@ -1219,6 +1219,418 @@ section.stripe-blue {
   }
 }
 
+.home-2022 {
+  font-family: 'Sofia Pro';
+}
+
+.home-2022 h1, .home-2022 h2, .home-2022 h3 {
+  font-family: 'Sofia Pro';
+}
+
+.home-2022 section {
+  padding: 60px 0px;
+}
+
+.home-2022 a.btn {
+  font-size: 100%;
+  padding: 1em 3em;
+  border-radius: 6px;
+}
+
+.home-2022 .home-hero {
+  background-size: cover;
+}
+
+@media only screen and (min-width: 1024px) {
+  .home-2022 .home-hero {
+    margin-top: 30px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-2022 .home-hero {
+    padding-top: 130px;
+    margin-bottom: calc(15vw + 170px);
+    background-repeat: no-repeat;
+  }
+}
+
+.home-2022 .home-hero .hero-copy {
+  padding: 60px;
+  padding-right: 40px;
+  background-color: rgba(50, 177, 218, 0.75);
+  border-bottom-right-radius: 100px;
+  max-width: 50%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .home-2022 .home-hero .hero-copy {
+    padding-left: calc(15vw - 60px);
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-2022 .home-hero .hero-copy {
+    max-width: none;
+    width: 100%;
+    margin-top: 60px;
+    position: absolute;
+    border-radius: 0;
+    padding: 30px;
+    text-align: center;
+  }
+}
+
+.home-2022 .home-hero .hero-copy h1 {
+  font-family: 'Sofia Pro';
+  color: white;
+  margin-bottom: 0.5em;
+  font-size: 325%;
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-2022 .home-hero .hero-copy h1 {
+    font-size: 6vw;
+  }
+}
+
+.home-2022 .home-subhero .item .inner {
+  text-align: center;
+  padding: 0 45px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .home-2022 .home-subhero .item .inner {
+    min-height: 330px;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-2022 .home-subhero .item {
+    margin-bottom: 25px;
+  }
+}
+
+.home-2022 .home-subhero .item img {
+  margin-bottom: 25px;
+  width: 150px;
+}
+
+.home-2022 .home-subhero .item span {
+  color: #16212a;
+  font-size: 24px;
+  line-height: 1.2em;
+  font-weight: bold;
+  display: block;
+}
+
+.home-2022 .home-subhero .item a {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .home-2022 .home-subhero .item a {
+    position: absolute;
+    bottom: 15px;
+    margin-left: -45px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-2022 .home-subhero .item a {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .home-2022 .home-subhero .item.middle-item .inner {
+    border-left: solid 1px rgba(0, 0, 0, 0.25);
+    border-right: solid 1px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.home-2022 .home-products .content h2 {
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-2022 .home-products .content h2 {
+    font-size: 28px;
+  }
+}
+
+.home-2022 .home-products .content h2 span {
+  display: inline-block;
+  background-color: #8fc741;
+  width: 55px;
+  height: 25px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: relative;
+  top: -25px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-2022 .home-products .content h2 span {
+    top: 0;
+  }
+}
+
+.home-2022 .home-products .content p {
+  padding-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #16212a;
+}
+
+.home-2022 .home-products .product {
+  margin-bottom: 30px;
+}
+
+.home-2022 .home-products .product h3 {
+  font-size: 24px;
+  margin: auto;
+  max-width: 80%;
+  margin-bottom: 25px;
+}
+
+.home-2022 .home-products .product img {
+  max-width: 200px;
+  margin-bottom: 30px;
+  border-radius: 100%;
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-2022 .home-clients .image {
+    margin-bottom: 30px;
+  }
+}
+
+.home-2022 .home-clients .image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.home-2022 .home-clients .content {
+  margin-bottom: 35px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-2022 .home-clients .content {
+    text-align: center;
+  }
+}
+
+.home-2022 .home-clients .content span.eyebrow {
+  display: inline-block;
+  background-color: #8fc741;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 10px 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-bottom: 15px;
+}
+
+.home-2022 .home-clients .content p {
+  font-size: 18px;
+  line-height: 1.7em;
+  color: #16212a;
+}
+
+.home-2022 .home-clients .content h2 {
+  font-size: 45px;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-2022 .home-clients .content h2 {
+    font-size: 28px;
+  }
+}
+
+.home-2022 .home-support h2 {
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-2022 .home-support h2 {
+    font-size: 24px;
+  }
+}
+
+.home-2022 .home-support h2 span {
+  display: inline-block;
+  background-color: #8fc741;
+  width: 55px;
+  height: 25px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: relative;
+  top: -25px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-2022 .home-support h2 span {
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-2022 .home-support .item {
+    margin-bottom: 30px;
+  }
+}
+
+.home-2022 .home-support .inner {
+  border-radius: 6px;
+  background-color: #ffffff;
+  padding-bottom: 15px;
+}
+
+.home-2022 .home-support .inner img {
+  max-width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.home-2022 .home-support .inner .content {
+  padding: 30px 60px 0 60px;
+}
+
+.home-2022 .home-support .inner .content h3 {
+  font-size: 24px;
+}
+
+.home-2022 .home-support .inner .content p {
+  line-height: 1.8;
+  color: #16212a;
+}
+
+.home-2022 .home-support .inner > a {
+  display: block;
+  text-align: center;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-2022 .home-partners .content {
+    text-align: center;
+  }
+}
+
+.home-2022 .home-partners .content h2 {
+  font-size: 40px;
+}
+
+.home-2022 .home-partners .content p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #16212a;
+}
+
+.home-2022 .home-partners .content > a {
+  margin-top: 25px;
+}
+
+.home-2022 .home-partners .partner-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-2022 .home-partners .partner-container {
+    margin-top: 60px;
+  }
+}
+
+.home-2022 .home-partners .partner-container img {
+  margin: 10px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-2022 .home-partners .partner-container img {
+    margin: 5px;
+    width: 45%;
+  }
+}
+
+.home-2022 .home-testimonials {
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-2022 .home-testimonials {
+    padding-top: 130px;
+    margin-bottom: calc(15vw + 540px);
+  }
+}
+
+.home-2022 .home-testimonials .testimonial-copy {
+  padding: 60px;
+  background-color: rgba(50, 177, 218, 0.75);
+  border-bottom-right-radius: 100px;
+  max-width: 50%;
+  color: white;
+  font-size: 24px;
+  line-height: 1.7em;
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-2022 .home-testimonials .testimonial-copy {
+    max-width: none;
+    width: 100%;
+    margin-top: 60px;
+    position: absolute;
+    border-radius: 0;
+    font-size: 18px;
+  }
+}
+
+.home-2022 .home-testimonials .testimonial-copy > span {
+  text-indent: -999em;
+  display: block;
+  width: 75px;
+  height: 75px;
+  background-image: url("https://go.dreamspring.org/hubfs/testimonial-quote.svg");
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+}
+
+.home-2022 .home-testimonials .testimonial-copy p.byline {
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+.home-2022 .home-testimonials .testimonial-copy a.btn {
+  margin-top: 15px;
+  font-size: 18px;
+  background-color: rgba(7, 87, 114, 0.7);
+  border: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  .home-2022 .home-testimonials .testimonial-copy a.btn {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .home-2022 .home-testimonials .testimonial-copy {
+    padding-left: calc(15vw - 60px);
+  }
+}
+
 .pre-header {
   width: 100%;
   background-color: #fedabb;
