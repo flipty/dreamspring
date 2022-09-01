@@ -32,6 +32,11 @@
                     }
                 }
             }
+            &.content-left {
+                .form {
+                    left: 0;
+                }
+            }
         }
     }
     .partners {
@@ -45,6 +50,29 @@
         a {
             @include breakpoint(desktop){
                 font-size: 1.25rem;
+            }
+        }
+    }
+    div.bg-light {
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background-color: rgba(50,177,218,0.75) !important;
+        h2 {
+            color: white !important;
+        }
+        .nav-box {
+            a {
+                h4 {
+                    color: white !important;
+                    + div {
+                        display: none !important;
+                    }
+                }
+                &.active {
+                    h4 {
+                        color: rgba(50,177,218,0.75) !important;
+                    }
+                }
             }
         }
     }

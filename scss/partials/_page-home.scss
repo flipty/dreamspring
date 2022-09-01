@@ -133,16 +133,23 @@
         }
         .product {
             margin-bottom: 30px;
+            .image {
+                border-radius: 200px;
+                width: 200px;
+                height: 200px;
+                overflow: hidden;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                img {
+                    max-width: 340px;
+                    margin-left: -67px;
+                }
+            }
             h3 {
                 font-size: 24px;
                 margin: auto;
                 max-width: 80%;
                 margin-bottom: 25px;
-            }
-            img {
-                max-width: 200px;
-                margin-bottom: 30px;
-                border-radius: 100%;
             }
         }
 
@@ -274,7 +281,42 @@
                 }
             }
         }
+        .logos {
+            @include breakpoint(mobile){
+                margin-top: 30px;
+            }
+        }
 
+    }
+
+    .home-stats {
+        background-size: cover;
+        .stats-copy {
+            padding: 60px;
+            background-color: rgba(50,177,218,0.75);
+            border-bottom-right-radius: 100px;
+            // max-width: 50%;
+            font-size: 18px;
+            line-height: 1.7em;
+            h2, p {
+                color: $white;
+            }
+            @include breakpoint(mobile){
+                max-width: none;
+                width: 100%;
+                margin-top: 60px;
+                border-radius: 0;
+                font-size: 18px;
+            }
+            @include breakpoint(desktop){ 
+                //padding-left: calc(15vw - 60px);
+            }
+        }
+        .stats-numbers {
+            @include breakpoint(desktop){
+                margin-top: 40px;
+            }
+        }
     }
     .home-testimonials {
         background-size: cover;
