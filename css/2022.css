@@ -1441,6 +1441,10 @@ section.stripe-blue {
   margin-bottom: 25px;
 }
 
+.home-2022 .home-clients {
+  padding-bottom: 0;
+}
+
 @media only screen and (max-width: 1023px) {
   .home-2022 .home-clients .image {
     margin-bottom: 30px;
@@ -1453,7 +1457,7 @@ section.stripe-blue {
 }
 
 .home-2022 .home-clients .content {
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -1700,6 +1704,504 @@ section.stripe-blue {
 @media only screen and (min-width: 1024px) {
   .home-2022 .home-testimonials .testimonial-copy {
     padding-left: calc(15vw - 60px);
+  }
+}
+
+.partner-pac section {
+  padding: 60px 0;
+}
+
+@media only screen and (max-width: 1023px) {
+  .partner-pac section {
+    padding: 30px 0;
+  }
+}
+
+.partner-pac .partner-header {
+  padding: 10px 0;
+}
+
+.partner-pac .partner-header .logo {
+  text-align: center;
+}
+
+.partner-pac .partner-header .logo img {
+  margin: 15px auto;
+}
+
+@media only screen and (max-width: 1023px) {
+  .partner-pac .partner-header .logo img {
+    max-width: 250px;
+  }
+}
+
+.partner-pac .partner-header .logo-partners .logos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partner-pac .partner-header .logo-partners .logos img {
+  max-width: 200px;
+  width: calc(100% - 15px);
+  height: auto;
+  margin-right: 15px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .partner-pac .partner-header .logo-partners .logos img {
+    margin-right: auto;
+    max-width: 100px;
+  }
+}
+
+.partner-pac .partner-hero {
+  padding: 0;
+}
+
+.partner-pac .partner-hero .inner {
+  padding: 60px 0;
+  text-align: right;
+  background-size: cover;
+  background-position: center;
+}
+
+.partner-pac .partner-hero .inner .hero-content h1 {
+  font-size: 65px;
+  width: 50%;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 1023px) {
+  .partner-pac .partner-hero .inner .hero-content h1 {
+    width: 70%;
+    font-size: 24px;
+  }
+}
+
+.partner-pac .partner-hero .inner .hero-content a.btn {
+  font-size: 32px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .partner-pac .partner-hero .inner .hero-content a.btn {
+    font-size: 24px;
+  }
+}
+
+.partner-pac .partner-hero .content {
+  padding: 0;
+}
+
+.partner-pac .partner-hero .content .sectionlink {
+  font-size: 32px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .partner-pac .partner-hero .content .sectionlink {
+    font-size: 18px;
+  }
+}
+
+.partner-pac .partner-hero .content .sectionlink a {
+  color: #333;
+  display: block;
+  padding: 45px 0;
+}
+
+@media only screen and (max-width: 1023px) {
+  .partner-pac .partner-hero .content .sectionlink a {
+    padding: 20px 0;
+  }
+}
+
+.partner-pac .partner-hero .content .sectionlink a:hover {
+  background-color: #ffffff;
+  color: #f15a29;
+}
+
+@media only screen and (max-width: 1023px) {
+  .partner-pac .partner-hero .content .sectionlink {
+    width: 100%;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .partner-pac .partner-hero .content .sectionlink.midlink {
+    border-left: solid 2px #EEE;
+    border-right: solid 2px #EEE;
+  }
+}
+
+.partner-pac .partner-hero .content a.btn {
+  font-size: 34px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .partner-pac .partner-hero .content a.btn {
+    font-size: 24px;
+  }
+}
+
+.partner-pac .partner-intro .partner-block {
+  padding: 30px;
+  margin: 50px 0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.partner-pac .partner-intro .partner-block .inner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partner-pac .partner-intro .partner-block .inner .image {
+  width: calc(33% - 30px);
+  text-align: center;
+}
+
+@media only screen and (max-width: 1023px) {
+  .partner-pac .partner-intro .partner-block .inner .image {
+    width: 100%;
+  }
+}
+
+.partner-pac .partner-intro .partner-block .inner .image img {
+  max-width: 66%;
+  margin: 30px 15px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .partner-pac .partner-intro .partner-block .inner .image img {
+    margin: 0 auto;
+    max-width: 75%;
+    margin-bottom: 15px;
+  }
+}
+
+.partner-pac .partner-intro .partner-block .inner .content {
+  width: 66%;
+  font-size: 23px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .partner-pac .partner-intro .partner-block .inner .content {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+.partner-pac .partner-intro .partner-block .inner .content > * {
+  padding: 15px;
+  margin: 0;
+}
+
+.partner-pac .partner-intro .partner-block.logo-right .inner {
+  flex-flow: row-reverse wrap;
+}
+
+.partner-pac .partner-quotes .pullquote {
+  margin: 50px 0 0;
+}
+
+.partner-pac .partner-quotes .pullquote .inner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partner-pac .partner-quotes .pullquote .inner .image {
+  width: 33%;
+}
+
+@media only screen and (max-width: 1023px) {
+  .partner-pac .partner-quotes .pullquote .inner .image {
+    width: 100%;
+  }
+}
+
+.partner-pac .partner-quotes .pullquote .inner .image img {
+  max-width: 100%;
+}
+
+.partner-pac .partner-quotes .pullquote .inner .content {
+  width: 63%;
+  font-size: 24px;
+  color: #666;
+}
+
+@media only screen and (max-width: 1023px) {
+  .partner-pac .partner-quotes .pullquote .inner .content {
+    width: 100%;
+  }
+}
+
+.partner-pac .partner-quotes .pullquote .inner .content span.quote {
+  display: block;
+  color: #23bfee;
+  font-size: 150px;
+  font-weight: 900;
+  line-height: 25px;
+}
+
+.partner-pac .partner-quotes .pullquote.image_right .inner {
+  flex-flow: row-reverse wrap;
+}
+
+.partner-pac .partner-quotes .pullquote.image_right .inner .content span.quote {
+  text-align: right;
+}
+
+.partner-pac .partner-quotes .pullquote.no_image .inner .image {
+  display: none;
+}
+
+.partner-pac .partner-quotes .pullquote.no_image .inner .content {
+  width: 100%;
+}
+
+.partner-pac .partner-quotes .pullquote.no_image .inner .content span.quote {
+  text-align: right;
+}
+
+.partner-pac .partner-states {
+  background-color: #F7F6F8;
+}
+
+@media only screen and (max-width: 1023px) {
+  .partner-pac .partner-states .content {
+    text-align: center;
+  }
+}
+
+.partner-pac .partner-products .product-grid {
+  justify-content: center;
+}
+
+.partner-pac .partner-products .product-grid .content .extra ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.partner-pac .partner-products .product-grid .content .extra ul li {
+  list-style: none;
+}
+
+.partner-pac .partner-products .product-grid .content .extra ul li:before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: 7px;
+  height: 28px;
+  width: 28px;
+  margin-right: 7px;
+  background-image: url("https://go.dreamspring.org/hubfs/check.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.partner-pac .partner-questions #hs_cos_wrapper_partner_form .inputs-list.multi-container {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.partner-pac .partner-questions #hs_cos_wrapper_partner_form .hs-error-msgs {
+  padding-left: 0;
+  list-style: none;
+}
+
+.partner-pac .partner-questions #hs_cos_wrapper_partner_form .hs-error-msgs li {
+  background-color: #f5ca99;
+}
+
+.partner-pac .partner-questions #hs_cos_wrapper_partner_form .hs-error-msgs li .hs-error-msg {
+  display: block;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.annual-giving section {
+  padding: 60px 0;
+}
+
+@media only screen and (max-width: 1023px) {
+  .annual-giving section {
+    padding: 30px 0;
+  }
+}
+
+.annual-giving section.annual-hero {
+  padding: 0;
+  padding-top: 30px;
+  position: relative;
+}
+
+.annual-giving section.annual-hero .image {
+  position: relative;
+  width: 100%;
+}
+
+.annual-giving section.annual-hero .image img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.annual-giving section.annual-hero .content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://go.dreamspring.org/hubfs/wave-blue-hero.png");
+  background-repeat: no-repeat;
+  background-size: 166vw;
+  background-position: -54vw 20vw;
+}
+
+@media only screen and (max-width: 1023px) {
+  .annual-giving section.annual-hero .content {
+    background: rgba(52, 192, 233, 0.75);
+    height: auto;
+    position: static;
+  }
+}
+
+.annual-giving section.annual-hero .content h1 {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 1024px) {
+  .annual-giving section.annual-hero .content h1 {
+    font-size: 4.5vw;
+    line-height: 1.3em;
+    max-width: 43vw;
+    padding-bottom: 0.75em;
+    padding-top: 0.75em;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .annual-giving section.annual-hero .content h1 {
+    position: static;
+    padding: 0.25em 0;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.annual-giving section.annual-testimonial .content p {
+  line-height: 1.7em;
+}
+
+.annual-giving section.annual-testimonial .content img.quote {
+  width: 100px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.annual-giving section.wave-blue {
+  padding: 60px 0;
+}
+
+.annual-giving section.wave-blue:before {
+  display: block;
+  content: '';
+  background: url("https://go.dreamspring.org/hubfs/wave-blue-top.jpg");
+  background-size: 100% 115px;
+  height: 130px;
+  border-bottom: solid 15px #d2f2fc;
+}
+
+@media only screen and (max-width: 1023px) {
+  .annual-giving section.wave-blue:before {
+    height: 80px;
+    background-size: 100% 65px;
+  }
+}
+
+.annual-giving section.wave-blue:after {
+  display: block;
+  content: '';
+  background: url("https://go.dreamspring.org/hubfs/wave-blue-bottom.jpg");
+  background-size: 100% 100px;
+  height: 100px;
+  margin-top: -10px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .annual-giving section.wave-blue:after {
+    height: 65px;
+    background-size: 100% 65px;
+  }
+}
+
+.annual-giving section.wave-blue .inner {
+  background-color: #d2f2fc;
+}
+
+.annual-giving section.wave-blue .inner .image img {
+  border-radius: 6px;
+}
+
+.annual-giving section.wave-blue .inner .content p {
+  line-height: 1.7em;
+}
+
+.annual-giving section.outro .content .inner {
+  margin-top: -100px;
+}
+
+.annual-giving section.outro .content .inner:before {
+  display: block;
+  width: 100px;
+  height: 100px;
+  content: '';
+  background: url("https://go.dreamspring.org/hubfs/testimonial-quote-green.svg");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  position: relative;
+  z-index: 2;
+  top: 200px;
+  left: -50px;
+}
+
+.annual-giving section.outro .content .inner > * {
+  position: relative;
+  z-index: 3;
+}
+
+.annual-giving section.outro .content .inner p {
+  line-height: 1.7em;
+  font-size: 18px;
+}
+
+.annual-giving h2 span.leaf {
+  display: inline-block;
+  background-color: #8fc741;
+  width: 55px;
+  height: 25px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: relative;
+  top: -18px;
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .annual-giving h2 span.leaf {
+    top: 0;
   }
 }
 

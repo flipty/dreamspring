@@ -1,0 +1,153 @@
+.annual-giving {
+    section {
+        padding: 60px 0;
+        @include breakpoint(mobile){
+            padding: 30px 0;
+        }
+    }
+    section.annual-hero {
+        padding: 0;
+        padding-top: 30px;
+        position: relative;
+        .image {
+            position: relative;
+            width: 100%;
+            img {
+                width: 100% !important;
+                height: auto !important;
+            }
+        }   
+        .content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://go.dreamspring.org/hubfs/wave-blue-hero.png');
+            background-repeat: no-repeat;
+            background-size: 166vw; //this is a bit dependent on the size of the image
+            background-position: -54vw 20vw; //this is a bit dependent on the size of the image
+            @include breakpoint(mobile){
+                background: $blue-brand-transparent;
+                height: auto;
+                position: static;
+            }
+            h1 {
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                bottom: 0;
+                color: $white;
+                @include breakpoint(desktop){
+                    font-size: 4.5vw;
+                    line-height: 1.3em;
+                    max-width: 43vw;
+                    padding-bottom: 0.75em;
+                    padding-top: 0.75em;
+                }
+                @include breakpoint(mobile){
+                    position: static;
+                    padding: 0.25em 0;
+                    font-size: 30px;
+                    text-align: center;
+                    // white-space: nowrap;
+                }
+            }
+        }
+    }
+    section.annual-testimonial {
+        .content {
+            p {
+                line-height: 1.7em;
+            }
+            img.quote {
+                width: 100px;
+                margin-bottom: 15px;
+                display: block;
+            }    
+        }
+    }
+    section.wave-blue {
+        padding: 60px 0;
+        &:before {
+            display: block;
+            content: '';
+            background: url('https://go.dreamspring.org/hubfs/wave-blue-top.jpg');
+            background-size: 100% 115px;
+            height: 130px;
+            border-bottom: solid 15px #d2f2fc;
+            @include breakpoint(mobile) {
+                height: 80px;
+                background-size: 100% 65px;
+            }
+        }
+        &:after {
+            display: block;
+            content: '';
+            background: url('https://go.dreamspring.org/hubfs/wave-blue-bottom.jpg');
+            background-size: 100% 100px;
+            height: 100px;
+            margin-top: -10px;
+            @include breakpoint(mobile) {
+                height: 65px;
+                background-size: 100% 65px;
+            }
+        }
+        .inner {
+            background-color: #d2f2fc;
+            .image {
+                img {
+                    border-radius: 6px;
+                }
+            }
+            .content {
+                p {
+                    line-height: 1.7em;
+                }
+            }
+        }
+    }
+    section.outro {
+        .content {
+            .inner {
+                margin-top: -100px;//needs to match the heigh of the quote
+                &:before {
+                    display: block;
+                    width: 100px;
+                    height: 100px;
+                    content: '';
+                    background: url('https://go.dreamspring.org/hubfs/testimonial-quote-green.svg');
+                    background-repeat: no-repeat;
+                    background-size: 100px;
+                    position: relative;
+                    z-index: 2;
+                    top: 200px;
+                    left: -50px;
+                }
+                > * {
+                    position: relative;
+                    z-index: 3;
+                }
+                p {
+                    line-height: 1.7em;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    h2 {
+        span.leaf { //header eyebrow
+            display: inline-block;
+            background-color: $green-brand;
+            width: 55px;
+            height: 25px;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            position: relative;
+            top: -18px;
+            margin-left: 5px;
+            @include breakpoint(mobile){
+                top: 0;
+            }
+        }
+    }
+}

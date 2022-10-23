@@ -1,0 +1,277 @@
+.partner-pac {
+    section {
+        padding: 60px 0;
+        @include breakpoint(mobile){
+            padding: 30px 0;
+        }
+    }
+    .partner-header {
+        padding: 10px 0;
+        .logo {
+            text-align: center;
+            img {
+                margin: 15px auto;
+                @include breakpoint(mobile){
+                    max-width: 250px;
+                }
+            }
+        }
+        .logo-partners {
+            .logos {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+                img {
+                    max-width: 200px;
+                    width: calc(100% - 15px);
+                    height: auto;
+                    margin-right: 15px;
+                    @include breakpoint(mobile){
+                        margin-right: auto;
+                        max-width: 100px;
+                    }
+                }
+            }            
+        }
+    }
+    .partner-hero {
+        padding: 0;
+        .inner {
+            padding: 60px 0;
+            text-align: right;
+            background-size: cover;
+            background-position: center;
+            .hero-content {
+                h1 {
+                    font-size: 65px;
+                    width: 50%;
+                    margin-left: auto;
+                    @include breakpoint(mobile){
+                        width: 70%;
+                        font-size: 24px;
+                    }
+                }
+                a.btn {
+                    font-size: 32px;
+                    @include breakpoint(mobile){
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        .content {
+            padding: 0;
+            .sectionlink {
+                font-size: 32px;
+                @include breakpoint(mobile){
+                    font-size: 18px;
+                }
+                a {
+                    color: #333;
+                    display: block;
+                    padding: 45px 0;
+                    @include breakpoint(mobile){
+                        padding: 20px 0;
+                    }
+                    &:hover {
+                        background-color: $white;
+                        color: $orange-dark;
+                    }
+                }
+                @include breakpoint(mobile){
+                    width: 100%;
+                    font-size: 24px;
+                }
+                &.midlink {
+                    @include breakpoint(desktop){
+                    border-left: solid 2px #EEE;
+                    border-right: solid 2px #EEE;
+
+                    }
+                }
+            }
+            a.btn {
+                font-size: 34px;
+                @include breakpoint(mobile){
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    .partner-intro {
+        // background: #f6f1f1;
+        .partner-block {
+            padding: 30px;
+            margin: 50px 0;
+            border-radius: 8px;
+            background-color: $white;
+            box-shadow: 0 0 10px $black15;
+            .inner {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+                .image {
+                    width: calc(33% - 30px);
+                    text-align: center;
+                    @include breakpoint(mobile){
+                        width: 100%;
+                    }
+                    img {
+                        max-width: 66%;
+                        margin: 30px 15px;
+                        @include breakpoint(mobile){
+                            margin: 0 auto;
+                            max-width: 75%;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+                .content {
+                    width: 66%;
+                    font-size: 23px;
+                    @include breakpoint(mobile){
+                        width: 100%;
+                        font-size: 18px;
+                    }
+                    > * {
+                        padding: 15px;
+                        margin: 0;
+                    }
+                }
+            }
+            &.logo-right {
+                .inner {
+                    flex-flow: row-reverse wrap;
+                }
+            }
+        }
+    }
+    .partner-quotes {
+                .pullquote {
+            margin: 50px 0 0;
+            .inner {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+                .image {
+                    width: 33%;
+                    @include breakpoint(mobile){
+                        width: 100%;
+                    }
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                .content {
+                    width: 63%;
+                    font-size: 24px;
+                    color: #666;
+                    @include breakpoint(mobile){
+                        width: 100%;
+                    }
+                    span.quote {
+                        display: block;
+                        color: #23bfee;
+                        font-size: 150px;
+                        font-weight: 900;
+                        line-height: 25px;
+                    }
+
+                } 
+            }
+            &.image_right {
+                .inner {
+                    flex-flow: row-reverse wrap;
+                    .content {
+                        span.quote {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+            &.no_image {
+                .inner {
+                    .image {
+                        display: none;
+                    }
+                    .content {
+                        width: 100%;
+                        span.quote {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .partner-states {
+        background-color: #F7F6F8;
+        .content {
+            @include breakpoint(mobile){
+                text-align: center;
+            }
+
+        }
+    }
+    .partner-products {
+        .product-grid {
+            justify-content: center;
+            .content {
+                .extra {
+                    ul {
+                        padding-left: 0;
+                        list-style: none;
+                        li {
+                            list-style: none;
+                            &:before {
+                                content: '';
+                                display: inline-block;
+                                position: relative;
+                                top: 7px;
+                                height: 28px;
+                                width: 28px;
+                                margin-right: 7px;
+                                background-image: url('https://go.dreamspring.org/hubfs/check.jpg');
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                }
+            }
+            .button {
+            }
+        }
+    }
+    .partner-questions {
+        #hs_cos_wrapper_partner_form {
+            .inputs-list.multi-container {
+                list-style: none;
+                padding-left: 0;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                li {
+                    label {
+                    }
+                }
+            }
+            .hs-error-msgs {
+                padding-left: 0;
+                list-style: none;
+                li {
+                    background-color: $warning;
+                    .hs-error-msg {
+                        display: block;
+                        padding: 15px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+}
