@@ -38,8 +38,8 @@
                 bottom: 0;
                 color: $white;
                 @include breakpoint(desktop){
-                    font-size: 4.5vw;
-                    line-height: 1.3em;
+                    font-size: 4vw;
+                    line-height: 1.2em;
                     max-width: 43vw;
                     padding-bottom: 0.75em;
                     padding-top: 0.75em;
@@ -133,6 +133,11 @@
                 }
             }
         }
+        .image {
+            img {
+                border-radius: 6px;
+            }
+        }
     }
     h2 {
         span.leaf { //header eyebrow
@@ -143,8 +148,8 @@
             border-top-left-radius: 50px;
             border-bottom-right-radius: 50px;
             position: relative;
-            top: -18px;
-            margin-left: 5px;
+            top: -10px;
+            margin-left: -2px;
             @include breakpoint(mobile){
                 top: 0;
             }

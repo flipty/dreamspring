@@ -2084,8 +2084,8 @@ section.stripe-blue {
 
 @media only screen and (min-width: 1024px) {
   .annual-giving section.annual-hero .content h1 {
-    font-size: 4.5vw;
-    line-height: 1.3em;
+    font-size: 4vw;
+    line-height: 1.2em;
     max-width: 43vw;
     padding-bottom: 0.75em;
     padding-top: 0.75em;
@@ -2187,6 +2187,10 @@ section.stripe-blue {
   font-size: 18px;
 }
 
+.annual-giving section.outro .image img {
+  border-radius: 6px;
+}
+
 .annual-giving h2 span.leaf {
   display: inline-block;
   background-color: #8fc741;
@@ -2195,8 +2199,8 @@ section.stripe-blue {
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
   position: relative;
-  top: -18px;
-  margin-left: 5px;
+  top: -10px;
+  margin-left: -2px;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -2220,4 +2224,11 @@ section.stripe-blue {
   font-weight: bold;
   color: #c35a02;
   text-decoration: underline;
+}
+
+.btn-xl {
+  padding: 1.125rem 1.125rem;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  border-radius: 0.75rem;
 }
