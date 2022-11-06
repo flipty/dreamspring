@@ -25,7 +25,7 @@
             background: url('https://go.dreamspring.org/hubfs/wave-blue-hero.png');
             background-repeat: no-repeat;
             background-size: 166vw; //this is a bit dependent on the size of the image
-            background-position: -54vw 20vw; //this is a bit dependent on the size of the image
+            background-position: -52vw 24vw; //this is a bit dependent on the size of the image
             @include breakpoint(mobile){
                 background: $blue-brand-transparent;
                 height: auto;
@@ -38,7 +38,7 @@
                 bottom: 0;
                 color: $white;
                 @include breakpoint(desktop){
-                    font-size: 4vw;
+                    font-size: 3.6vw;
                     line-height: 1.2em;
                     max-width: 43vw;
                     padding-bottom: 0.75em;
@@ -51,6 +51,13 @@
                     text-align: center;
                     // white-space: nowrap;
                 }
+            }
+        }
+    }
+    section.annual-donate {
+        iframe {
+            @include breakpoint(mobile){
+                margin-top: 30px;
             }
         }
     }
@@ -109,19 +116,19 @@
     section.outro {
         .content {
             .inner {
-                margin-top: -100px;//needs to match the heigh of the quote
+                // margin-top: -100px;//needs to match the heigh of the quote
                 &:before {
-                    display: block;
-                    width: 100px;
-                    height: 100px;
-                    content: '';
-                    background: url('https://go.dreamspring.org/hubfs/testimonial-quote-green.svg');
-                    background-repeat: no-repeat;
-                    background-size: 100px;
-                    position: relative;
-                    z-index: 2;
-                    top: 200px;
-                    left: -50px;
+                    // display: block;
+                    // width: 100px;
+                    // height: 100px;
+                    // content: '';
+                    // background: url('https://go.dreamspring.org/hubfs/testimonial-quote-green.svg');
+                    // background-repeat: no-repeat;
+                    // background-size: 100px;
+                    // position: relative;
+                    // z-index: 2;
+                    // top: 200px; 
+                    // left: -50px;
                 }
                 > * {
                     position: relative;
@@ -137,6 +144,9 @@
             img {
                 border-radius: 6px;
             }
+        }
+        .button {
+            margin-top: 30px;
         }
     }
     h2 {

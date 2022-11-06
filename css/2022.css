@@ -2063,7 +2063,7 @@ section.stripe-blue {
   background: url("https://go.dreamspring.org/hubfs/wave-blue-hero.png");
   background-repeat: no-repeat;
   background-size: 166vw;
-  background-position: -54vw 20vw;
+  background-position: -52vw 24vw;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -2084,7 +2084,7 @@ section.stripe-blue {
 
 @media only screen and (min-width: 1024px) {
   .annual-giving section.annual-hero .content h1 {
-    font-size: 4vw;
+    font-size: 3.6vw;
     line-height: 1.2em;
     max-width: 43vw;
     padding-bottom: 0.75em;
@@ -2098,6 +2098,12 @@ section.stripe-blue {
     padding: 0.25em 0;
     font-size: 30px;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .annual-giving section.annual-donate iframe {
+    margin-top: 30px;
   }
 }
 
@@ -2159,24 +2165,6 @@ section.stripe-blue {
   line-height: 1.7em;
 }
 
-.annual-giving section.outro .content .inner {
-  margin-top: -100px;
-}
-
-.annual-giving section.outro .content .inner:before {
-  display: block;
-  width: 100px;
-  height: 100px;
-  content: '';
-  background: url("https://go.dreamspring.org/hubfs/testimonial-quote-green.svg");
-  background-repeat: no-repeat;
-  background-size: 100px;
-  position: relative;
-  z-index: 2;
-  top: 200px;
-  left: -50px;
-}
-
 .annual-giving section.outro .content .inner > * {
   position: relative;
   z-index: 3;
@@ -2189,6 +2177,10 @@ section.stripe-blue {
 
 .annual-giving section.outro .image img {
   border-radius: 6px;
+}
+
+.annual-giving section.outro .button {
+  margin-top: 30px;
 }
 
 .annual-giving h2 span.leaf {
