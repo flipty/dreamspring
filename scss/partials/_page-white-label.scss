@@ -29,25 +29,89 @@
             }
         }
     }
-    .partner-hero {
-        background-color: #F7F6F8;
-        padding-top: 0;
-        .welcome {
-            background-color: $white;
-            h1 {
-                font-size: 65px;
-            }
-            img {
+    // .partner-hero {
+    //     background-color: #F7F6F8;
+    //     padding-top: 0;
+    //     .welcome {
+    //         background-color: $white;
+    //         h1 {
+    //             font-size: 65px;
+    //         }
+    //         img {
 
+    //         }
+    //     }
+    //     .content {
+    //         padding: 60px 0;
+    //         h2 {
+    //             font-size: 60px;
+    //             @include breakpoint(mobile){
+    //                 width: 100%;
+    //                 font-size: 24px;
+    //             }
+    //         }
+    //         a.btn {
+    //             font-size: 34px;
+    //             @include breakpoint(mobile){
+    //                 font-size: 24px;
+    //             }
+    //         }
+    //     }
+    // }
+        .partner-hero {
+        padding: 0;
+        .inner {
+            padding: 60px 0;
+            text-align: right;
+            background-size: cover;
+            background-position: center;
+            .hero-content {
+                h1 {
+                    font-size: 65px;
+                    width: 50%;
+                    margin-left: auto;
+                    @include breakpoint(mobile){
+                        width: 70%;
+                        font-size: 24px;
+                    }
+                }
+                a.btn {
+                    font-size: 32px;
+                    @include breakpoint(mobile){
+                        font-size: 24px;
+                    }
+                }
             }
         }
         .content {
-            padding: 60px 0;
-            h2 {
-                font-size: 60px;
+            padding: 0;
+            .sectionlink {
+                font-size: 32px;
+                @include breakpoint(mobile){
+                    font-size: 18px;
+                }
+                a {
+                    color: #333;
+                    display: block;
+                    padding: 45px 0;
+                    @include breakpoint(mobile){
+                        padding: 20px 0;
+                    }
+                    &:hover {
+                        background-color: $white;
+                        color: $orange-dark;
+                    }
+                }
                 @include breakpoint(mobile){
                     width: 100%;
                     font-size: 24px;
+                }
+                &.midlink {
+                    @include breakpoint(desktop){
+                    border-left: solid 2px #EEE;
+                    border-right: solid 2px #EEE;
+
+                    }
                 }
             }
             a.btn {

@@ -10,7 +10,7 @@
 	</div>
 	<div class="content">
 		<div class="container">
-			<h1>Support Business Dreams With Your Donation</h1>
+			<h1>Vitalize communites & transform lives through the power of entrepreneurship!</h1>
 		</div>
 	</div>
   </section>

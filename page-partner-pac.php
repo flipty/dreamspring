@@ -113,6 +113,22 @@
             </div>
         </div>
     </section>
+    
+    <section class="partner-apply">
+        <div class="container">
+            <h2>Apply area with form thingie</h2>
+            <div class="row">
+                <div class="col-md-6">Copy goes here...</div>
+                <div class="col-md-6">
+                    <form class="pac-id">
+                        <input type="text" maxlength="7" class="pac-id-field numbers-only">
+                        <input disabled="disabled" type="button" class="btn btn-default btn-sm pac-id-submit" value="Submit" name="" id="">
+                    </form>
+                    <div class="form-hint">Your PAC ID is 5 to 7 numbers</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="partner-products">
         <div class="container">

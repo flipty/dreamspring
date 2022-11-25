@@ -35,7 +35,40 @@ var dreamspring = {
         });
 
       });
+    },
+    pacId: function(){
+      var $IDinput = $('input.pac-id-field');
+      var $IDsubmit = $('input.pac-id-submit');
+      var $minLength = 5;
+      var $maxLength = 7;
+      //var $letters = /[a-zA-Z]/g;
+      var $hint = $('.form-hint'); 
+      var $baseURL = 'https://flare.dreamspring.org/loan_applications/new';
+      var $parameter = '?utm_partner_member_id=';
+      var $cleanID = 0;
+      
+      //validate that it's 5-7 characters long
+      $IDinput.keyup(function() {
+        var $textlength = $(this).val().length;
+        $finalURL = '';
+        if ( $textlength >= $minLength && $textlength <= $maxLength ) { 
+          $hint.addClass('hidden');
+          $IDsubmit.removeAttr('disabled');
+          $cleanID = $(this).val();
+        }
+        if ( $textlength < $minLength ) { 
+          $hint.removeClass('hidden');
+          $IDsubmit.attr('disabled', 'disabled');
+          $cleanID = '';
+        }
+        $finalURL = $baseURL + $parameter + $cleanID;
+        console.log($finalURL);
+      });
+      $IDsubmit.on('click', function(){
+        window.location.href = $finalURL;
+      });
     }
+
 
 }
 
@@ -43,4 +76,5 @@ $(document).ready(function(){
     dreamspring.hamburger();
     dreamspring.circles();
     dreamspring.productGrid();
+    dreamspring.pacId();
 });

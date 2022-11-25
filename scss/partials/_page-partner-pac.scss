@@ -274,4 +274,97 @@
         }
     }
 
+    .partner-apply {
+        .content-area {
+            margin: 50px 0 0;
+            .inner {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+                .image {
+                    width: 33%;
+                    @include breakpoint(mobile){
+                        width: 100%;
+                    }
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                .content {
+                    width: 63%;
+                    font-size: 24px;
+                    color: #666;
+                    @include breakpoint(mobile){
+                        width: 100%;
+                    }
+                    span.quote {
+                        display: block;
+                        color: #23bfee;
+                        font-size: 150px;
+                        font-weight: 900;
+                        line-height: 25px;
+                    }
+
+                } 
+            }
+            &.image_right {
+                .inner {
+                    flex-flow: row-reverse wrap;
+                    .content {
+                        span.quote {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+            &.no_image {
+                .inner {
+                    .image {
+                        display: none;
+                    }
+                    .content {
+                        width: 100%;
+                        span.quote {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+        form.pac-id {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 15px;
+            @include breakpoint(mobile){
+                flex-flow: row wrap;
+            }
+            input.pac-id-field {
+                border-color: #CCC;
+                margin-right: 15px;
+                padding-top: 32px;
+                padding-bottom: 32px;
+                @include breakpoint(mobile){
+                    margin-bottom: 15px;
+                }
+            }
+            input.pac-id-submit {
+                background-color: $orange-dark;
+                color: $white;
+            }
+        }
+        .form-hint {
+            background-color: $green-brand;
+            color: $white;
+            text-align: center;
+            padding: 10px;
+            margin: 15px 0;
+            &.hidden {
+                display: none;
+            }
+        }
+    }
+
 }
