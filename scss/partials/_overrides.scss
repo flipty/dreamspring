@@ -16,7 +16,30 @@
 nav.no-menu {
     display: block;
     text-align: center;
+    button.navbar-toggler {
+        display: none;
+    }
+    &.has-text-header {
+        @include breakpoint(desktop){
+            display: flex;
+            flex-flow: row;
+            a.navbar-brand {
+                margin-right: 30px;
+            }            
+        }
+        @include breakpoint(mobile){
+            h1, h2, h3, p {
+                text-align: center !important;
+            }
+            h1 {
+                line-height: 1em;
+                margin-bottom: 15px;                
+            }
+        }
+    }
 }
+
+
 
 .btn-xl {
     padding: 1.125rem 1.125rem;

@@ -123,6 +123,29 @@
         }
     }
     .partner-intro {
+        h2 {
+            span.subhead {
+                display: block;
+                margin-top: 10px;
+            }
+        }
+        .partner-connect {
+            .inner {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 23px;
+                .methods {
+                    width: 100%;
+                    font-size: 16px;
+                    border-top: solid 1px #CCC;
+                    padding-top: 30px;
+                    margin-top: 15px;
+                }
+            }
+        }
+
         .partner-block {
             padding: 30px;
             margin: 50px 0;

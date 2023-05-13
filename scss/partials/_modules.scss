@@ -1,0 +1,106 @@
+section.hero-wave {
+    padding: 0;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    .image {
+        position: relative;
+        width: 100%;
+        img {
+            width: 100% !important;
+            height: auto !important;
+        }
+    }   
+    .content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: url('https://go.dreamspring.org/hubfs/wave-blue-hero-mid.png'); 
+        background-repeat: no-repeat;
+        background-size: 109vw; //this is a bit dependent on the size of the image, default 2000 x 860
+        background-position: -5vw 20vw; //this is a bit dependent on the size of the image
+        @include breakpoint(mobile){
+            background: $blue-brand-transparent;
+            height: auto;
+            position: static;
+        }
+        .container {
+            position: relative;
+            max-width: none;
+            @include breakpoint(desktop){
+                height: 33vw;                
+            }
+            h1 {
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                bottom: 0;
+                color: $white;
+                @include breakpoint(desktop){
+                    font-size: 3.75vw;
+                    //font-size: max(3.75vw, 45px);
+                    font-size: clamp(3.75px, 4vw, 56px);
+                    // font-size: 40px;
+                    line-height: 1em;
+                    text-align: center;
+                    padding-bottom: 0;
+                    padding-top: 0;
+                    bottom: 10%;
+                    // max-width: 1100px;
+                    width: 100%;
+                    display: block;
+                }
+                @include breakpoint(mobile){
+                    position: static;
+                    padding: 0.25em 0;
+                    font-size: 30px;
+                    text-align: center;
+                    // white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+
+section.wave-blue {
+    padding: 60px 0;
+    &:before {
+        display: block;
+        content: '';
+        background: url('https://go.dreamspring.org/hubfs/wave-blue-top.jpg');
+        background-size: 100% 115px;
+        height: 130px;
+        border-bottom: solid 15px #d2f2fc;
+        @include breakpoint(mobile) {
+            height: 80px;
+            background-size: 100% 65px;
+        }
+    }
+    &:after {
+        display: block;
+        content: '';
+        background: url('https://go.dreamspring.org/hubfs/wave-blue-bottom.jpg');
+        background-size: 100% 100px;
+        height: 100px;
+        margin-top: -10px;
+        @include breakpoint(mobile) {
+            height: 65px;
+            background-size: 100% 65px;
+        }
+    }
+    .inner {
+        background-color: #d2f2fc;
+        padding-bottom: 30px;
+        .image {
+            img {
+                border-radius: 6px;
+            }
+        }
+        .content {
+            p {
+                line-height: 1.7em;
+            }
+        }
+    }
+}

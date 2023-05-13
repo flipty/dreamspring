@@ -9,14 +9,19 @@
             padding-top: 30px;
             padding-bottom: 30px;
             .image {
-                width: 33%;
+                @include breakpoint(desktop){
+                    width: 33%;      
+                    padding-top: 20px;              
+                }
                 img {
                         border-bottom-left-radius: 0.75rem;
                         border-bottom-right-radius: 0.75rem;
                 }
             }
             .content {
-                width: 66%;
+                @include breakpoint(desktop){
+                    width: 66%;                    
+                }
             }
         }
     }

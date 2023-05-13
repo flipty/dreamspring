@@ -4,6 +4,133 @@
   }
 }
 
+section.hero-wave {
+  padding: 0;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+section.hero-wave .image {
+  position: relative;
+  width: 100%;
+}
+
+section.hero-wave .image img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+section.hero-wave .content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://go.dreamspring.org/hubfs/wave-blue-hero-mid.png");
+  background-repeat: no-repeat;
+  background-size: 109vw;
+  background-position: -5vw 20vw;
+}
+
+@media only screen and (max-width: 1023px) {
+  section.hero-wave .content {
+    background: rgba(52, 192, 233, 0.75);
+    height: auto;
+    position: static;
+  }
+}
+
+section.hero-wave .content .container {
+  position: relative;
+  max-width: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  section.hero-wave .content .container {
+    height: 33vw;
+  }
+}
+
+section.hero-wave .content .container h1 {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 1024px) {
+  section.hero-wave .content .container h1 {
+    font-size: 3.75vw;
+    font-size: clamp(3.75px, 4vw, 56px);
+    line-height: 1em;
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 0;
+    bottom: 10%;
+    width: 100%;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  section.hero-wave .content .container h1 {
+    position: static;
+    padding: 0.25em 0;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+section.wave-blue {
+  padding: 60px 0;
+}
+
+section.wave-blue:before {
+  display: block;
+  content: '';
+  background: url("https://go.dreamspring.org/hubfs/wave-blue-top.jpg");
+  background-size: 100% 115px;
+  height: 130px;
+  border-bottom: solid 15px #d2f2fc;
+}
+
+@media only screen and (max-width: 1023px) {
+  section.wave-blue:before {
+    height: 80px;
+    background-size: 100% 65px;
+  }
+}
+
+section.wave-blue:after {
+  display: block;
+  content: '';
+  background: url("https://go.dreamspring.org/hubfs/wave-blue-bottom.jpg");
+  background-size: 100% 100px;
+  height: 100px;
+  margin-top: -10px;
+}
+
+@media only screen and (max-width: 1023px) {
+  section.wave-blue:after {
+    height: 65px;
+    background-size: 100% 65px;
+  }
+}
+
+section.wave-blue .inner {
+  background-color: #d2f2fc;
+  padding-bottom: 30px;
+}
+
+section.wave-blue .inner .image img {
+  border-radius: 6px;
+}
+
+section.wave-blue .inner .content p {
+  line-height: 1.7em;
+}
+
 section.stripe-blue {
   background: #dbf5fe;
 }
@@ -240,15 +367,15 @@ section.stripe-blue {
   height: auto;
 }
 
-#main.annual-report .image,
-#main.product-detail .image,
-#main.application-readiness .image {
+#main.annual-report section.image,
+#main.product-detail section.image,
+#main.application-readiness section.image {
   margin-top: 60px;
 }
 
-#main.annual-report .image .inner img,
-#main.product-detail .image .inner img,
-#main.application-readiness .image .inner img {
+#main.annual-report section.image .inner img,
+#main.product-detail section.image .inner img,
+#main.application-readiness section.image .inner img {
   max-width: 100%;
   width: 100%;
   height: auto;
@@ -723,8 +850,11 @@ section.stripe-blue {
   padding-bottom: 30px;
 }
 
-.news-listing .featured-post .card .image {
-  width: 33%;
+@media only screen and (min-width: 1024px) {
+  .news-listing .featured-post .card .image {
+    width: 33%;
+    padding-top: 20px;
+  }
 }
 
 .news-listing .featured-post .card .image img {
@@ -732,8 +862,10 @@ section.stripe-blue {
   border-bottom-right-radius: 0.75rem;
 }
 
-.news-listing .featured-post .card .content {
-  width: 66%;
+@media only screen and (min-width: 1024px) {
+  .news-listing .featured-post .card .content {
+    width: 66%;
+  }
 }
 
 .news-listing .blog-pagination {
@@ -1028,6 +1160,27 @@ section.stripe-blue {
   .white-label .partner-hero .content a.btn {
     font-size: 24px;
   }
+}
+
+.white-label .partner-intro h2 span.subhead {
+  display: block;
+  margin-top: 10px;
+}
+
+.white-label .partner-intro .partner-connect .inner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 23px;
+}
+
+.white-label .partner-intro .partner-connect .inner .methods {
+  width: 100%;
+  font-size: 16px;
+  border-top: solid 1px #CCC;
+  padding-top: 30px;
+  margin-top: 15px;
 }
 
 .white-label .partner-intro .partner-block {
@@ -2368,6 +2521,11 @@ section.stripe-blue {
   }
 }
 
+main.values section.hero-wave .image img {
+  max-width: 143% !important;
+  width: 143% !important;
+}
+
 .pre-header {
   width: 100%;
   background-color: #fedabb;
@@ -2388,6 +2546,30 @@ section.stripe-blue {
 nav.no-menu {
   display: block;
   text-align: center;
+}
+
+nav.no-menu button.navbar-toggler {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  nav.no-menu.has-text-header {
+    display: flex;
+    flex-flow: row;
+  }
+  nav.no-menu.has-text-header a.navbar-brand {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  nav.no-menu.has-text-header h1, nav.no-menu.has-text-header h2, nav.no-menu.has-text-header h3, nav.no-menu.has-text-header p {
+    text-align: center !important;
+  }
+  nav.no-menu.has-text-header h1 {
+    line-height: 1em;
+    margin-bottom: 15px;
+  }
 }
 
 .btn-xl {
