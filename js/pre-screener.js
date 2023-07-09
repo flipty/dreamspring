@@ -1,69 +1,70 @@
-//found in the HubSpot Module "Application Screener - Static"
+//pre-screener.js
 
-$('a.btn.next').click(function(e){
-  $(".slick").slick('slickNext');
-  e.preventDefault();
-});
-$('a.btn.prev').click(function(e){
-  $(".slick").slick('slickPrev');
-  e.preventDefault();
-});
+var $questions = $('.questions');
+var $question = $questions.find('.question');
 
-var $flareURL = $('.flareURL').text();
-var $partnerURL = $('.partnerURL').text();
+$questionImage = $('.question-image');
+$screenerButton = $('.screener-button');
+$screenerButtonContainer = $('.screener-button-container');
 
-$('select.button-assign').each(function(){
-  var $theseButtons = $(this).parents('.card-body').siblings('.card-footer').find('a.btn');
+$question.each(function(){
+  var $thisSelect = $(this).find('select');
+  $thisSelect.each(function(){
+    
+    $(this).on('change', function(){
+    
+      var $selected = $(this).find("option:selected");
+      var $thisValue = $selected.attr('value');
+      var $thisDestination = '#' + $selected.attr('value');
+      var $changeButtonText = $selected.data('buttonchange');
+      var $thisButtonURL = $selected.data('buttonurl');
+      var $thisImageURL = $(this).parents('.question').data('imageurl');
+      var $buttonDelete = $selected.data('buttondelete');
+      var $isExternal = false;
+      if ( $thisValue.indexOf('external') != -1 ) {
+        $isExternal = true;
+      }
+      $screenerButtonContainer.empty();
+
+      var $destinationButtonText = $($thisDestination).data('questionbutton');
+      var $newButtonText = 'Continue';
+      
+      if ($destinationButtonText) { $newButtonText = $destinationButtonText }
+      
+      if (!$isExternal){
+        var $newButton = $('<a />').addClass('btn btn-sm btn-primary-primary transition-3d-hover screener-button').html('Continue<!--(internal)-->');
+      }
+      if ($isExternal){
+        var $newButton = $('<a />').addClass('btn btn-sm btn-primary-primary transition-3d-hover screener-button').html('Continue<!--(external)-->');        
+      }
+      
+      $screenerButtonContainer.append($newButton);  
+      
+      $newButton.on('click', function(){
+        var $destinationQuestionImage = $(this).parents('.screener-button-container').siblings('.questions').children($thisDestination).data('imageurl');
+        $questionImage.attr('src', $destinationQuestionImage);
+        if ($isExternal){ 
+          console.log('external link');
+          $(this).text($changeButtonText); 
+          //$(this).attr('href', $thisButtonURL);
+          function buttonLinkChange(){
+            $('.screener-button').attr('href', $thisButtonURL);
+            $('.screener-button').attr('target', '_blank');
+          }
+          setTimeout(buttonLinkChange, 1000);
+        }
+        if (!$isExternal){ 
+          console.log('internal link');
+          $(this).text($newButtonText); 
+          $(this).on('click', function(e){ e.preventDefault() });
+        }
+        $('.question').removeClass('active').addClass('inactive');
+        $($thisDestination).removeClass('inactive').addClass('active');
+        console.log('Activate ' + $thisDestination);
+      });//button click 
   
-  $(this).on('change', function(){
-    var $thisSelected = $(this).find("option:selected");
-    
-    // Next Question
-    if ($thisSelected.hasClass('nextstep')){
-      $('.redirect-content').removeClass('active');
-      $('.redirect-content .flare').removeClass('active');
-      $theseButtons.each(function(e){
-        $(this).addClass('next');
-        $(this).text('Continue');
-        $(this).click(function(e){
-          $(".slick").slick('slickNext');
-          e.preventDefault();
-        });
-      });      
-    }
+    });//on change
 
-    // Forward to DreamSpring (Flare)
-    if ($thisSelected.hasClass('goFlare')){
-      //show the transport message
-      $('.redirect-content .partner').removeClass('active');
-      $('.redirect-content').addClass('active');
-      $('.redirect-content .flare').addClass('active');
-      //change link to Flare and un-bind this button
-      $theseButtons.each(function(e){
-        $(this).unbind('click');
-        $(this).removeClass('next');
-        $(this).attr('href', $flareURL);
-        $(this).text('Continue to Our Application Form');
-      });      
-    }
+  });//each select
 
-    // Forward to Partner (Flare)
-    if ($thisSelected.hasClass('goPartner')){
-      //show the transport message
-      $('.redirect-content').addClass('active');
-      $('.redirect-content .flare').removeClass('active');
-      $('.redirect-content .partner').addClass('active');
-      //change link to Partner and un-bind this button
-      $theseButtons.each(function(e){
-        $(this).unbind('click');
-        $(this).removeClass('next');
-        $(this).attr('href', $partnerURL);
-        $(this).text('Continue to the Funding Circle Application Form');
-      });      
-    }
-    
-    
-  });
-
-  
-});
+});//each question

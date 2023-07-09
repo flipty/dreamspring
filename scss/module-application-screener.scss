@@ -1,0 +1,65 @@
+@import 'partials/variables';
+//application screener with dynamic questions and no carousel 
+.questions {
+	position: relative;
+	min-height: 7vw;
+	@include breakpoint(mobile){
+		min-height: 26vw;
+	}
+}
+.question {
+	transition: all 250ms;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	&.inactive {
+		opacity: 0;
+		visibility: hidden;
+	}
+	&.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	p {
+		@include breakpoint(mobile){
+			font-size: 14px;
+		}
+	}
+}
+
+.screener-button-container {
+	position: relative;
+	width: 100%;
+	top: 90px;
+	text-align: center;
+	padding-top: 15px;	
+	padding-bottom: 70px;
+	&.inactive {
+		display: none;
+	}
+	.screener-button {
+		transition: all 250ms;
+		opacity: 1;
+		&.inactive {
+			opacity: 0;
+		}
+	}
+}
+
+.external-links {
+	width: 100%;
+.external {
+	text-align: center;
+	transition: all 250ms;
+	border-radius: 6px;
+	border: solid 1px #22c0f0;
+	background-color: #dbf5fe;
+	display: none;
+	.inner {
+		padding: 15px;
+		}
+	&.active {
+		display: block;
+		}
+	}	
+}
