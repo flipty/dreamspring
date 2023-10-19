@@ -69,3 +69,8 @@ $black10:     rgba(0,0,0,0.1);
     display: none !important;
   }
 }
+.desktop-only {
+  @include breakpoint(mobile){ 
+    display: none !important;
+  }
+}

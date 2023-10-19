@@ -1,0 +1,49 @@
+@import 'partials/variables';
+
+.home-hero-v2 {
+	background-size: cover;
+	min-height: 29vw;
+	background-repeat: no-repeat;
+	@include breakpoint(mobile){
+		background-position-x: 80%;
+		min-height: 40vw;
+	}
+	.home-hero-cta {
+		display: flex;
+		flex-flow: row;
+		align-content: center;
+		min-height: 19vw;
+		@include breakpoint(mobile){
+			flex-flow: column;
+		    top: 35vw;
+		    position: relative;
+		    align-items: center;
+		    width: 100%;
+		    margin-bottom: 13vw;
+		}
+		@include breakpoint(desktop){
+			&.tl {
+				align-items: flex-start;
+			}
+			&.tr {
+				align-items: flex-start;
+				flex-flow: row-reverse;
+			}
+			&.cl {
+				flex-flow: wrap;
+			}
+			&.cr {
+			    align-items: center;
+			    flex-flow: row-reverse;		
+			}
+			&.bl {
+				flex-flow: row;
+				align-items: flex-end;
+			}
+			&.br {
+				align-items: flex-end;
+				flex-flow: row-reverse;
+			}			
+		}
+	}
+}

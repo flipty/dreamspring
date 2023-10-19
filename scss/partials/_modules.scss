@@ -1,16 +1,111 @@
+section.home-hero-wave {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    margin-top: 30px;
+    @include breakpoint(mobile){
+        background-size: 100%;
+        background-color: $blue-brand;
+    }
+    .inner {
+        overflow: hidden;
+        position: relative;
+        min-height: 720px;
+        display: flex;
+        flex-flow: column-reverse;
+        @include breakpoint(mobile){
+            min-height: auto;
+        }
+        .home-hero-content {
+            // padding-bottom: 100px;
+            padding-bottom: 4vw;
+            z-index: 8;
+            .content-inner {
+                width: 100%;
+                text-align: center;
+                h1, h2, h3, h4, p {
+                    color: white;
+                }
+                @include breakpoint(desktop){
+                    h1 {
+                        font-size: 5vw;
+                        line-height: 1em;
+                        padding-bottom: 25px;
+                    }                    
+                }
+                img {
+                    @include breakpoint(mobile){
+                        width: 75%;               
+                        margin-top: 110px;
+                    }   
+                }
+            }
+        }
+        .wave {
+            position: absolute;
+            width: 100%;
+            // bottom: -80px;
+            bottom: -10vw;
+            height: 37vw;
+            z-index: 7;
+            @media (min-width: 1600px) {
+                bottom: -20vw;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &.testimonial {
+        margin-bottom: 60px;
+        .inner {
+            .home-hero-content {
+                @include breakpoint(mobile){
+                    padding-top: 185px;
+                }
+                p {
+                    margin: 0 auto;
+                    font-size: 19px;
+                    width: 55vw;
+                    line-height: 1.7em;
+                }
+                h4 {
+                    font-size: 14px;
+                    font-weight: normal;
+                    padding: 25px 0;
+                }
+            }
+            .wave {
+                bottom: -190px;
+                @media (min-width: 1600px) {
+                    bottom: -20vw;
+                }
+            }
+        }
+        a.btn {
+            background-color: rgba(0,0,0,0.25);
+            border: none;
+        }
+    }
+}
+
+a.hasarrow {
+    &:after {
+    content: '→';
+    display: inline-block;
+    height: 1.25em;
+    width: 1.25em;
+    line-height: 1.15em;
+    background-color: #f15a28;
+    color: #ffffff;
+    border-radius: 50px;
+    margin-left: 6px;
+    }
+}
+
 section.hero-wave {
     padding: 0;
-    padding-top: 30px;
-    margin-bottom: 30px;
     position: relative;
-    .image {
-        position: relative;
-        width: 100%;
-        img {
-            width: 100% !important;
-            height: auto !important;
-        }
-    }   
     .content {
         position: absolute;
         bottom: 0;
@@ -61,6 +156,12 @@ section.hero-wave {
             }
         }
     }
+    .image {
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
 }
 
 section.wave-blue {
@@ -104,3 +205,63 @@ section.wave-blue {
         }
     }
 }
+
+section.wave-blue-dark {
+    padding: 60px 0;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    background: #23c0f1;
+    color: $white;
+    &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 118px;
+        background: url(https://go.dreamspring.org/hubfs/wave-blue-dark-top.png) no-repeat;
+        background-size: 100% 59px;
+        margin-top: -118px;
+        margin-bottom: -50px;
+    }
+    &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 118px;
+        background: url(https://go.dreamspring.org/hubfs/wave-blue-dark-bottom.png) no-repeat;
+        background-size: 100% 59px;
+        position: relative;
+        top: 118px;
+        margin-top: -118px;
+    }
+}
+
+section.wave-blue-light {
+    padding: 60px 0;
+    padding-bottom: 0 !important;
+    background: #dbf5fe;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    color: $black;
+    &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 118px;
+        background: url(https://go.dreamspring.org/hubfs/wave-blue-light-top.png) no-repeat;
+        background-size: 100% 59px;
+        margin-top: -118px;
+        margin-bottom: -50px;
+    }
+    &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 118px;
+        background: url(https://go.dreamspring.org/hubfs/wave-blue-light-bottom.png) no-repeat;
+        background-size: 100% 59px;
+        position: relative;
+        top: 118px;
+        margin-top: -118px;
+    }
+}
+

@@ -3,14 +3,39 @@
 <body>
 
 <main id="main" class="home-2022">
+
+    <div class="w-lg-75 text-center mx-lg-auto">
+        <div class="mb-7">
+            <h1 class="display-4 mb-4 ">Funding business dreams, vitalizing communities.</h1>
+            <p class="lead"></p>
+        </div>
+    </div>
   
+<section class="home-hero-v2" style="background-image:url('images/Homepage-Hero-July-2023.webp');">
+
+    <div class="container">
+        <div class="home-hero-cta cl">
+            
+            <div class="button-shell-temp"><!--this will actually be the button module's shell code-->
+                <a href="#" class="btn btn-sm btn-primary-primary transition-3d-hover">Button Module</a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<style>
+<?php include('css/module-hero-v2.css');?>  
+</style>
+
+<!--
     <section class="home-hero" style="background-image:url('https://www.placecage.com/1280/450');">
         <div class="hero-copy">
             <h1>Funding business dreams, vitalizing communities.</h1>
             <a href="#" class="btn btn-sm btn-primary-primary transition-3d-hover">Button Module</a>
         </div>
     </section>
-
+-->
     <section class="home-subhero">
         <div class="container">
             <div class="row">
