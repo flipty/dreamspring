@@ -336,7 +336,7 @@
     .home-news {
         .inner {
             @include breakpoint(desktop){
-                min-height: 560px;
+                min-height: 410px;
             }
             .image {
                 @include breakpoint(desktop){
@@ -408,7 +408,10 @@
                 letter-spacing: 0.05em;
             }
             @include breakpoint(mobile){
-                margin-top: 30px;
+                margin-top: 45px;
+                img {
+                    max-width: 100%;
+                }
             }
         }
 
@@ -429,6 +432,9 @@
                 border-top-left-radius: 250px;
                 border-bottom-right-radius: 250px;
                 margin-left: -10%;
+                @include breakpoint(desktop){
+                    font-size: clamp(75px, 4vw, 100px);
+                }
                 @include breakpoint(mobile){
                     font-size: 13vw;
                 }
