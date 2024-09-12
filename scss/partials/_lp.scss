@@ -1,0 +1,214 @@
+.lp30 {
+	.image-header {
+		position: relative;
+		z-index: 4;
+	}
+	section.wave-blue-dark.tickets-intro {
+		position: relative;
+		z-index: 5;
+		padding-bottom: 10px;
+		&:after {
+			@include breakpoint(desktop){
+				top: 128px;
+			}
+		}
+		h1 {
+			font-size: 3.25rem;
+			line-height: 1.2em;
+			@include breakpoint(mobile){
+				font-size: 2.25rem;
+			}
+		}
+		h2 {
+			font-style: italic;
+			font-weight: normal; 
+		}
+		p {
+			font-size: 1.4rem;
+			@include breakpoint(mobile){
+				font-size: 1rem;
+			}
+		}
+	}
+	section.ticket-info {
+		.logo {
+			img {
+				max-width: 275px;
+				@include breakpoint(desktop){
+					position: relative;
+					top: -50px;					
+				}
+			}
+		}
+		.ticket-header {
+			margin-bottom: -60px;
+				@include breakpoint(mobile){
+					text-align: center;
+					padding-bottom: 50px;
+				}
+		}
+		.ticket-options {
+			&.purchasing {
+
+			}
+			&.sponsorships {
+				@include breakpoint(mobile){
+					flex-flow: column-reverse;
+				}
+			}
+		}
+		.purchase, .sponsorship {
+			h2 {
+				line-height: 1.2em;
+				margin-bottom: 30px;
+			}
+			h3 {
+				font-size: 1.5rem;
+			}
+			> p {
+				text-align: center;
+			}
+			p.disclaimer {
+				text-align: center;
+			}
+		}
+		.purchase-image, .sponsorship-image {
+			@include breakpoint(mobile){
+				margin-bottom: 20px;
+			}
+			img {
+				max-width: 100%;
+				height: auto;
+				border-radius: 8px;
+			}
+		}
+		.sponsorship {
+			input[type="text"], input[type="email"], input[type="tel"]{
+				background-color: #EEE;
+				border-color: #999;
+				color: #222;
+			}
+			.hs_submit.hs-submit {
+				text-align: center;
+			}
+		}
+
+	}
+	section.sponsor-levels {
+		position: relative;
+		z-index: 5;
+		margin-bottom: -20px;
+		&:after {
+			@include breakpoint(desktop){
+				top: 177px;
+			}
+		}
+		> .container {
+			h2 {
+				margin-top: 50px;
+				line-height: 1.3em;
+				@include breakpoint(mobile){
+					font-size: 1.75rem;
+				}
+			}
+			p {
+				@include breakpoint(desktop){
+					margin-left: 100px;
+					margin-right: 100px;					
+				}
+			}
+		}
+	    div.bg-light {
+		    	background-color: #23c0f1 !important;
+		    	@include breakpoint(desktop){
+		    		> .container {
+		    			padding-bottom: 20px !important;
+		    			padding-top: 40px !important;
+		    		}
+		    	}
+	        h2 {
+	            color: white !important;
+	        }
+	        .nav-box {
+	            a {
+	                h4 {
+	                    color: white !important;
+	                    + div {
+	                        display: none !important;
+	                    }
+	                }
+	                &.active {
+	                    h4 {
+	                        color: rgba(50,177,218,0.75) !important;
+	                        color: #222 !important;
+	                    }
+	                }
+	            }
+	        }
+	        .tab-pane.active {
+	        	.card {
+	        		h3 {
+	        			color: rgba(50,177,218,0.75) !important;
+	        			margin-bottom: 15px;
+	        			font-weight: 600;
+	        		}
+	        		ul {
+	        			padding-left: 20px;
+	        			li {
+	        				margin-bottom: 12px;
+	        			}
+	        		}
+	        	}
+	        }
+	    }
+	    #hs_cos_wrapper_module_171836917399630 {
+	    	background-color: #23c0f1;
+	    }		
+	}
+	section.host-committee {
+		ul {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			padding: 0;
+			li {
+				width: 32%;
+				margin-bottom: 20px;
+				list-style: none;
+				text-align: center;
+			}
+		}
+	}
+	section.event-sponsors {
+		padding-bottom: 100px;
+		.host-info {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			> p {
+				@include breakpoint(desktop){
+					width: 22%;			
+					text-align: center;		
+				}
+				img {
+					max-width: 100%;
+					filter: grayscale(100%);
+				}
+			}
+		}
+	}
+	section.event-sponsors, section.host-committee {
+		&.hidden {
+			display: none;
+		}
+		h2 {
+			color: #23c0f1;
+			padding-top: 2em;
+			margin-bottom: 1em;
+		}
+	}
+	section.image-header.mid-image {
+		padding-bottom: 0;
+	}
+}
+

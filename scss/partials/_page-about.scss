@@ -18,6 +18,12 @@
             .inner {
                 text-align: center;
                 padding: 0 45px;
+                @include breakpoint(md){
+                    padding: 0 15px;
+                }
+                @include breakpoint(lg){
+                    padding: 0 15px;
+                }
                 @include breakpoint(desktop) {
                 	display: flex;
     				flex-flow: column;
@@ -36,6 +42,13 @@
                 line-height: 1.2em;
                 font-weight: bold;
                 display: block;
+                @include breakpoint(md){
+                    font-size: 16px;
+                }
+                @include breakpoint(lg){
+                    font-size: 18px;
+                }
+
             }
             a {
                 width: 100%;
@@ -386,6 +399,12 @@
     	.inner .wave {
     		bottom: -20vw;
     	}
+        h2 {
+            @include breakpoint(desktop){
+                margin-bottom: 0.5em;
+                font-size: 2.5rem;
+            }
+        }
     	a.btn {
 			color: #fff;
     		background-color: #f15a29;

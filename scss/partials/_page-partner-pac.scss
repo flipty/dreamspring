@@ -275,96 +275,144 @@
     }
 
     .partner-apply {
-        .content-area {
-            margin: 50px 0 0;
-            .inner {
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-between;
-                align-items: center;
-                .image {
-                    width: 33%;
-                    @include breakpoint(mobile){
-                        width: 100%;
-                    }
-                    img {
-                        max-width: 100%;
-                    }
-                }
-                .content {
-                    width: 63%;
-                    font-size: 24px;
-                    color: #666;
-                    @include breakpoint(mobile){
-                        width: 100%;
-                    }
-                    span.quote {
-                        display: block;
-                        color: #23bfee;
-                        font-size: 150px;
-                        font-weight: 900;
-                        line-height: 25px;
-                    }
+    //     .content-area {
+    //         margin: 50px 0 0;
+    //         .inner {
+    //             display: flex;
+    //             flex-flow: row wrap;
+    //             justify-content: space-between;
+    //             align-items: center;
+    //             .image {
+    //                 width: 33%;
+    //                 @include breakpoint(mobile){
+    //                     width: 100%;
+    //                 }
+    //                 img {
+    //                     max-width: 100%;
+    //                 }
+    //             }
+    //             .content {
+    //                 width: 63%;
+    //                 font-size: 24px;
+    //                 color: #666;
+    //                 @include breakpoint(mobile){
+    //                     width: 100%;
+    //                 }
+    //                 span.quote {
+    //                     display: block;
+    //                     color: #23bfee;
+    //                     font-size: 150px;
+    //                     font-weight: 900;
+    //                     line-height: 25px;
+    //                 }
 
-                } 
-            }
-            &.image_right {
-                .inner {
-                    flex-flow: row-reverse wrap;
-                    .content {
-                        span.quote {
-                            text-align: right;
-                        }
+    //             } 
+    //         }
+    //         &.image_right {
+    //             .inner {
+    //                 flex-flow: row-reverse wrap;
+    //                 .content {
+    //                     span.quote {
+    //                         text-align: right;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //         &.no_image {
+    //             .inner {
+    //                 .image {
+    //                     display: none;
+    //                 }
+    //                 .content {
+    //                     width: 100%;
+    //                     span.quote {
+    //                         text-align: right;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     form.pac-id {
+    //         display: flex;
+    //         flex-flow: row;
+    //         justify-content: space-around;
+    //         align-items: center;
+    //         margin-bottom: 15px;
+    //         @include breakpoint(mobile){
+    //             flex-flow: row wrap;
+    //         }
+    //         input.pac-id-field {
+    //             border-color: #CCC;
+    //             margin-right: 15px;
+    //             padding-top: 32px;
+    //             padding-bottom: 32px;
+    //             @include breakpoint(mobile){
+    //                 margin-bottom: 15px;
+    //             }
+    //         }
+    //         input.pac-id-submit {
+    //             background-color: $orange-dark;
+    //             color: $white;
+    //         }
+    //     }
+    //     .form-hint {
+    //         background-color: $green-brand;
+    //         color: $white;
+    //         text-align: center;
+    //         padding: 10px;
+    //         margin: 15px 0;
+    //         &.hidden {
+    //             display: none;
+    //         }
+    //     }
+    // }
+    .offer {
+        ul {
+            padding-left: 20px;
+            li.leaf {
+                list-style: none;
+                span {
+                    font-size: 20px;
+                    &:before {
+                        content: '';
+                        display: inline-block;
+                        width: 50px;
+                        height: 50px;
+                        background: url('https://go.dreamspring.org/hubfs/icon-briefcase.png');
+                        background-size: cover;
+                        margin-left: -50px;
+                        position: relative;
+                        top: 20px;
                     }
                 }
-            }
-            &.no_image {
-                .inner {
-                    .image {
-                        display: none;
-                    }
-                    .content {
-                        width: 100%;
-                        span.quote {
-                            text-align: right;
-                        }
-                    }
-                }
-            }
-        }
-        form.pac-id {
-            display: flex;
-            flex-flow: row;
-            justify-content: space-around;
-            align-items: center;
-            margin-bottom: 15px;
-            @include breakpoint(mobile){
-                flex-flow: row wrap;
-            }
-            input.pac-id-field {
-                border-color: #CCC;
-                margin-right: 15px;
-                padding-top: 32px;
-                padding-bottom: 32px;
-                @include breakpoint(mobile){
-                    margin-bottom: 15px;
-                }
-            }
-            input.pac-id-submit {
-                background-color: $orange-dark;
-                color: $white;
-            }
-        }
-        .form-hint {
-            background-color: $green-brand;
-            color: $white;
-            text-align: center;
-            padding: 10px;
-            margin: 15px 0;
-            &.hidden {
-                display: none;
+                
             }
         }
     }
-
+    .member-form {
+        #hs_form_target_apply_form {
+            background: #c9f0fb;
+            padding: 15px;
+            font-size: 13px;
+            ul.inputs-list {
+                padding-left: 0;
+                li {
+                    list-style: none;
+                }
+            }
+            input[type="radio"]{
+                display: inline-block;
+                width: 25px !important;
+            }
+        }
+        h3 {
+            background: #8fc741;
+            color: $white;
+            font-size: 13px;
+            text-align: center;
+            font-weight: normal;
+            padding: 5px 15px;
+        }
+    }
+    }
 }

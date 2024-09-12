@@ -109,6 +109,13 @@ a.hasarrow {
     }
 }
 
+a.btn {
+    &.btn-gray {
+        background-color: #AAA;
+        color: #FFF;
+    }
+}
+
 section.hero-wave {
     padding: 0;
     position: relative;
@@ -622,3 +629,285 @@ table.productComparison.nonmodal {
     }
 }
 
+section.partnercreative-header {
+    .logos-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        .logo-dreamspring {
+            @include breakpoint(mobile){
+                img {
+                    width: 100% !important;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+section.partnercreative-hero {
+    > .inner {
+        padding: 5vw 0;
+        background-size: cover;
+    }
+    h1 {
+        color: $white;
+        @include breakpoint(desktop){
+            width: 75%;
+            font-size: 100px;
+            line-height: 1.1em;
+        }
+        @include breakpoint(mobile){
+            font-size: 25px;
+            width: 65%;
+        }
+        em {
+            font-style: normal;
+            display: block;
+            font-size: 40%;
+            span {
+                font-size: 150%;
+                display: inline-block;
+                margin-left: 0.2em;
+            }
+        }
+    }
+    a.btn-xl {
+        @include breakpoint(mobile){
+            font-size: 1.25rem;
+        }
+    }
+    h2 {
+        color: $white;
+        @include breakpoint(desktop){
+            width: 52%;
+            font-size: 82px;
+            line-height: 1.1em;
+            margin-bottom: 30px;
+        }
+        @include breakpoint(mobile){
+            font-size: 25px;
+            width: 65%;
+        }
+        
+    }
+    .content {
+        padding-top: 30px;
+        .sectionlink {
+            .inner > span {
+                display: block;
+            }
+            img {
+                max-width: 75%;
+                border-radius: 100%;
+            }
+            &.midlink {
+                border-left: solid 1px #CCC;
+                border-right: solid 1px #CCC;
+            }
+            h3 {
+                font-size: 28px;
+                line-height: 1.1em;
+                margin: 15px auto;
+                width: 75%;
+            }
+            a.hasarrow {
+                color: $black-brand;
+                @include breakpoint(mobile){
+                    margin-bottom: 25px;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+section.partnercreative-intro {
+        .dreamcreative-brand {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            .dsplogo {
+                width: 70%;
+                @include breakpoint(mobile){
+                    width: 100%;
+                }
+                img {                
+                    display: block;
+                    @include breakpoint(desktop){
+                        width: 85%;
+                        margin: 0 auto;
+                    }
+                    @include breakpoint(mobile){
+                        margin-top: 15px;
+                    }
+                }
+            }
+            .logo-partners {
+                display: flex;
+                flex-flow: row;
+                justify-content: end;
+                width: 30%;
+                padding-top: 30px;
+                @include breakpoint(mobile){
+                    width: 100%;
+                    justify-content: center;
+                }
+
+                .logos {
+                display: flex;
+                flex-flow: row;
+                align-items: center;
+                span {
+                    color: #333;
+                    display: block;
+                    font-size: 14px;
+                    margin-right: 15px;
+                    margin-top: 3px;
+                    text-align: right;
+                    @include breakpoint(mobile){
+                        font-size: 12px;
+                        margin-right: 10px;
+                        margin-top: -7px;
+                    }
+                }
+                img {
+                    @include breakpoint(desktop){
+                        width: 142px;                        
+                        max-width: auto;
+                    }
+                    @include breakpoint(mobile){
+                        width: 80px;
+                    }
+                }
+            }
+        }   
+    }
+
+ 
+    .intro-cards {
+        .inner {
+            border-radius: 8px;
+            background: #fff;
+            padding-bottom: 15px;
+            img {
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                margin-bottom: 15px;
+            }
+            h3 {
+                padding: 0 25px;
+                font-size: 28px;
+                line-height: 1.1em;
+            }
+            p {
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+section#partnercreative-faq {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    &:after {
+        background: none;
+    }
+    #basicsAccordion {
+        border-top: solid 1px $white;
+        padding-top: 14px;
+    }
+    h2 {
+        text-align: center;
+        font-size: 64px;
+        margin-bottom: 0.75em;
+        @include breakpoint(mobile){
+            font-size: 30px;
+            line-height: 1.1em;
+        }
+    }
+    .card {
+        background: none;
+        .card-header {
+            background: none;
+            border-bottom: solid 1px $white;
+            a {
+                padding-bottom: 1em;
+            }
+        }
+        a {
+            background: none !important;
+            color: $white;
+            font-size: 30px;
+            @include breakpoint(mobile){
+                font-size: 20px;
+            }
+            .btn-link:hover, .card-btn-toggle {
+                color: $white;
+                font-size: 50px;
+                font-weight: 100;
+                font-family: system-ui;
+                line-height: 46px;
+            }
+        }
+    }
+}
+
+section.partnercreative-faq-extra {
+    padding: 0 0 60px 0;
+    color: $white;
+    @include breakpoint(mobile){
+        padding-bottom: 30px;
+    }
+    h3 {
+        @include breakpoint(desktop){
+            font-size: 45px;
+            margin-bottom: 25px;
+        }
+        @include breakpoint(mobile){
+            padding-bottom: 20px;
+            margin-top: -45px;
+        }
+        color: $white;
+    }
+}
+
+section.partnercreative-testimonials {
+    .container-xl {
+        @include breakpoint(desktop){
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+        h2 {
+            color: $black-brand;
+            @include breakpoint(desktop){
+                font-size: 43px;
+            }
+        }
+        .slick-arrow-primary-white:not(.slick-disabled) {
+            background-color: #f15a29;
+            color: $white;
+        }
+    }
+}
+
+li.icon-checklist {
+    list-style: none;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+section.image-header {
+    margin-bottom: -125px;
+    margin-top: 15px;
+    img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    &.mid-image {
+        margin-bottom: 60px;
+    }
+}

@@ -24,6 +24,43 @@
                 }
             }
         }
+        .social-proof {
+            border-top: solid 2px $black10;
+            .blog-logos {
+                .blog-logos-container {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        margin: 0 15px;
+                        width: 15%;
+                        height: -webkit-fill-available;
+                        @include breakpoint(mobile){
+                            width: 20%;
+                            height: auto;
+                        }
+                        &.ghost {
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+            .blog-contact {
+                text-align: center;
+                color: #23c0f1;
+                span {
+                    @include breakpoint(desktop){
+                        display: block;
+                        padding-top: 40px;
+                    }
+                }
+                a {
+                    color: #23c0f1;
+                    text-decoration: underline;
+                }
+            }
+        }
     }
     /* Numbered Pagination */
     .blog-pagination {
