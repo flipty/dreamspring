@@ -5,3 +5,353 @@ section.stripe-blue {
 section.stripe-blue-dark {
   background: #23c0f1;
 }
+
+//for CTA wrapper inside of 2025 DreamCreative template 
+#hs_cos_wrapper_CTAs, #hs_cos_wrapper_Past_CTAs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+#hs_cos_wrapper_CTAs > .hs_cos_wrapper, #hs_cos_wrapper_Past_CTAs > .hs_cos_wrapper {
+   width: 30% !important;
+   margin-bottom: 30px;
+   @include breakpoint(mobile){
+    width: 100% !important;
+   }
+}
+//end CTA wrapper inside of 2025 DreamCreative template
+
+#careers {
+  .about-dreamspring {
+    .header-green-leaf {
+      @include breakpoint(mobile){
+        font-size: 30px;
+      }
+    }
+  }
+  .careers-carousel.wave-blue-dark {
+    @include breakpoint(desktop){
+      margin-top: -60px;
+    }
+    .slick {
+      max-width: 100%;
+    }
+    .slick-pagination-primary {
+      li span {
+        background-color: rgba(0,0,0,0.5);
+        border-color: rgba(0,0,0,0.5);
+      }
+      li.slick-active span { 
+        border-color: transparent;
+        background-color: $white;
+      }
+    }
+  }
+  .careers-benefits {
+    .card .card-body {
+      background: $white;
+      padding: 0;
+      .media-body {
+        padding: 1.5rem;
+      }
+    }
+  }
+  .listings-list {
+    h3 {
+      background: #dbf5fe;
+      font-size: 13px;
+      text-transform: uppercase;
+      line-height: 48px;
+      padding-left: 15px;
+    }
+    ul {
+      padding-left: 0;
+      border-top: solid 1px #ccc;
+      list-style: none;
+      li {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: solid 1px #ccc;
+        line-height: 40px;
+        font-weight: bold;
+        a {
+          color: #222;
+          text-transform: uppercase;
+          &:after {
+            background: $orange-dark;
+          }
+        }
+        .card-body {
+          padding: 0.25em 0;
+        }
+      } 
+    }
+  }
+  .listings-contact {
+    > div {
+      box-shadow: 0 12px 15px rgba(140, 152, 164, .1);
+      padding: 25px;
+    }
+  }
+}
+
+#main.our-focus {
+  .intro-content, .who-we-are, .our-focus, .what-we-offer {
+    p {
+      line-height: 1.5em;
+    }
+  }
+}
+
+main#community {
+  section.hero-wave {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    margin-top: 30px;
+    @include breakpoint(mobile){
+        background-size: 100%;
+        background-color: $blue-brand;
+    }
+    .inner {
+        overflow: hidden;
+        position: relative;
+        min-height: 720px;
+        display: flex;
+        flex-flow: column-reverse;
+        @include breakpoint(mobile){
+            //min-height: auto;
+            min-height: 54vw;
+        }
+        .home-hero-content {
+            // padding-bottom: 100px;
+            padding-bottom: 8vw;
+            z-index: 8;
+            .content-inner {
+                width: 100%;
+                text-align: center;
+                h1, h2, h3, h4, p {
+                    color: white;
+                }
+                @include breakpoint(desktop){
+                    h1 {
+                        font-size: clamp(66px, 4vw, 99px);
+                        line-height: 1em;
+                        padding-bottom: 25px;
+                    }                    
+                }
+                @include breakpoint(mobile){
+                    h1 {
+                        line-height: 1em;
+                    }
+                }
+                img {
+                    width: 250px;
+                    @include breakpoint(mobile){
+                        width: 75%;               
+                        margin-top: 110px;
+                    }   
+                }
+            }
+        }
+        .wave {
+            position: absolute;
+            width: 100%;
+            // bottom: -80px;
+            bottom: -10vw;
+            height: 37vw;
+            z-index: 7;
+            @media (min-width: 1600px) {
+                bottom: -20vw;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &.testimonial {
+        margin-bottom: 60px;
+        .inner {
+            .home-hero-content {
+                @include breakpoint(mobile){
+                    padding-top: 185px;
+                }
+                p {
+                    margin: 0 auto;
+                    font-size: 19px;
+                    width: 55vw;
+                    line-height: 1.7em;
+                }
+                h4 {
+                    font-size: 14px;
+                    font-weight: normal;
+                    padding: 25px 0;
+                }
+            }
+            .wave {
+                bottom: -190px;
+                @media (min-width: 1600px) {
+                    bottom: -20vw;
+                }
+            }
+        }
+        a.btn {
+            background-color: rgba(0,0,0,0.25);
+            border: none;
+        }
+    }
+}
+  .community-regional-cards {
+    .cards-row {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+      }
+      
+      .item {
+        display: flex;
+        flex-flow: column;
+        width: 30%;
+      }
+      
+      .item:not(last-child) {
+        margin-right: 10px;
+      }
+      
+      .item__image {
+        img {
+          width: 100%;
+          height: auto;
+          border-top-right-radius: 8px;
+          border-top-left-radius: 8px;
+        }
+      }
+      
+      .item__content {
+        flex: 2 ;
+      }
+
+      .item__options {
+        text-align: center;
+        height: 100px; 
+      }
+  }
+}
+
+.dsp-event {
+    margin-bottom: 30px;
+    .inner {
+        display: flex;
+        flex-flow: row;
+        align-items: flex-start;
+        @include breakpoint(mobile){
+          flex-flow: column;
+        }
+        .month-day {    
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            margin-right: 30px;
+            @include breakpoint(mobile){
+              margin-right: 0;
+              width: 100%;
+            }
+            .date-area {
+                background: $blue-brand;
+                color: $white;
+                text-align: center;
+                width: 200px;
+                height: 150px;
+                margin-top: 10px;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                @include breakpoint(mobile){
+                  width: 100%;
+                  height: auto;
+                }                
+                .month {
+                    display: block;
+                    width: 100%;
+                    text-transform: uppercase;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+                .day {
+                    width: 100%;
+                    display: block;
+                    font-size: 105px;
+                    font-weight: 700;
+                    line-height: 0.9em;
+                    padding-bottom: 0.25em;
+                    @include breakpoint(mobile){ font-size: 75px; }
+                    &.chars-3 {
+                        font-size: 90px;
+                        @include breakpoint(mobile){ font-size: 75px; }
+                    }
+                    &.chars-4 {
+                        font-size: 70px;
+                        @include breakpoint(mobile){ font-size: 75px; }
+                    }
+                    &.chars-5 {
+                        font-size: 60px;
+                        @include breakpoint(mobile){ font-size: 75px; }
+                    }
+
+                }
+            }
+        }
+        .other-details {
+          width: 100%;
+            .details-area {
+                display: flex;
+                flex-flow: row;
+                justify-content: space-between;
+                align-items: center;
+                @include breakpoint(mobile){ 
+                  align-items: flex-start;
+                }
+                h3 {
+                    font-size: 28px; 
+                    @include breakpoint(mobile){
+                      font-size: 20px;
+                    }
+                }
+                h4 {
+                    font-weight: 400;
+                }
+                a {
+                    display: block;
+                    text-align: center;
+                    color: $white;
+                    background: $orange-dark;
+                    font-size: 20px;
+                    padding: 0.25em 1em 0.33em 1em;
+                    border-radius: 6px;
+                    margin-bottom: 15px;
+                    white-space: nowrap;
+                }
+                .register-button {
+                    margin-left: 30px;
+                    @include breakpoint(mobile){
+                      margin-left: 15px;
+                      margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+    &:nth-child(even){
+        .inner {
+            .other-details {
+                .details-area {
+                    a {
+                        background: $green-brand;
+                    }
+                }
+            }
+        }
+    }
+}

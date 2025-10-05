@@ -107,11 +107,24 @@ a.hasarrow {
     border-radius: 50px;
     margin-left: 6px;
     }
+    &.downarrow {
+        &:after {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15px;
+            transform: rotate(90deg);
+        }
+    }
 }
 
 a.btn {
     &.btn-gray {
         background-color: #AAA;
+        color: #FFF;
+    }
+    &.btn-blue {
+        background-color: $blue-brand;
         color: #FFF;
     }
 }
@@ -244,6 +257,7 @@ section.wave-blue-dark {
         background-size: 100% 59px;
         position: relative;
         top: 118px;
+        // top: 175px;
         margin-top: -118px;
     }
 }
@@ -262,7 +276,8 @@ section.wave-blue-light {
         height: 118px;
         background: url(https://go.dreamspring.org/hubfs/wave-blue-light-top.png) no-repeat;
         background-size: 100% 59px;
-        margin-top: -118px;
+        //margin-top: -118px;
+        margin-top: -115px;
         margin-bottom: -50px;
     }
     &:after {
@@ -705,6 +720,12 @@ section.partnercreative-hero {
             }
             &.midlink {
                 border-left: solid 1px #CCC;
+                border-right: solid 1px #CCC; 
+            }
+            &.borderleft {
+                border-left: solid 1px #CCC;
+            }
+            &.borderright {
                 border-right: solid 1px #CCC;
             }
             h3 {
@@ -777,7 +798,7 @@ section.partnercreative-intro {
                 img {
                     @include breakpoint(desktop){
                         width: 142px;                        
-                        max-width: auto;
+                        max-width: none;
                     }
                     @include breakpoint(mobile){
                         width: 80px;
@@ -894,6 +915,14 @@ section.partnercreative-testimonials {
     }
 }
 
+section.dreamcreative-cta-container {
+    h2 {
+        @include breakpoint(desktop){
+            font-size: 43px;
+        }
+    }
+}
+
 li.icon-checklist {
     list-style: none;
     list-style-type: none;
@@ -911,3 +940,248 @@ section.image-header {
         margin-bottom: 60px;
     }
 }
+
+h2.header-green-leaf, h3.header-green-leaf {
+    background-color: #8fc741;
+    color: $white;
+    line-height: 1em;
+    padding: 1em 0 .65em 1.25em;
+    letter-spacing: -0.025em;
+    border-top-left-radius: 250px;
+    border-bottom-right-radius: 250px;
+    // @include breakpoint(desktop){
+    //     font-size: clamp(75px, 4vw, 100px);
+    // }
+    // @include breakpoint(mobile){
+    //     font-size: 13vw;
+    // }
+}
+
+h1, h2, h3 {
+    span.leaf { //header eyebrow
+        display: inline-block;
+        background-color: $green-brand;
+        width: 1.5em;
+        height: 0.75em;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        position: relative;
+        top: -0.5em;
+        margin-left: 0.5em;
+        @include breakpoint(mobile){
+            top: 0;
+        }   
+    }   
+}
+
+section.home-stats {
+    .title {
+        h2 {
+            background-color: #8fc741;
+            // width: 90%;
+            font-size: 5vw;
+            color: $white;
+            line-height: 1em;
+            padding: 1.2em 0 0.65em 1.35em;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            border-top-left-radius: 250px;
+            border-bottom-right-radius: 250px;
+            margin-left: -10%;
+            @include breakpoint(desktop){
+                font-size: clamp(55px, 4vw, 70px);
+            }
+            @include breakpoint(mobile){
+                font-size: 11vw;
+                padding: 0.5em 0 0.65em 1.35em;
+                margin-left: 0;
+                border-top-left-radius: 50px;
+                border-bottom-right-radius: 50px;                    
+            }
+            @include breakpoint(lg){
+                font-size: 65px !important;
+                padding-top: 55px !important;
+            }
+            @include breakpoint(md){
+                font-size: 55px !important;
+                padding-top: 45px !important;
+                padding-left: 50px !important;
+                border-bottom-right-radius: 150px !important;
+                border-top-left-radius: 150px !important;
+            }
+        }
+        .title-content {
+            line-height: 1.7em;
+            font-size: 18px;
+            @include breakpoint(desktop){
+                padding-left: 30px;                    
+            }
+        }
+    }
+    .stats-items {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            padding-top: 60px;
+        .stats-item {
+            width: 50%;
+            text-align: center;
+            margin-bottom: 40px;
+            .stat-eyebrow {
+                display: block;
+                height: 8px;
+                width: 60px;
+                margin: 0 auto;
+                background-color: #333;
+                margin-bottom: 10px;
+                &#lent, &#loans {
+                    background-color: #8fc741; 
+                }
+                &#jobs {
+                    background-color: #22bcec; 
+                }
+                &#businesses {
+                    background-color: #f15a28; 
+                }
+            }
+            h5 {
+                text-transform: uppercase;
+                font-size: 13px;
+                margin-bottom: 0;
+                padding-bottom: 10px;
+                letter-spacing: 0.1em;
+                color: #666;
+                @include breakpoint(mobile){
+                    font-size: 12px;
+                }
+            }
+            .stat {
+                color: $black;
+                letter-spacing: -0.05em;
+                font-weight: 600;
+                line-height: 1em;
+                .currency {
+                    font-size: 2.75vw;
+                    margin-right: -0.25em;
+                    @include breakpoint(mobile){
+                        font-size: 7vw;
+                    }
+                }                    
+                .WASjs-counter {
+                    font-size: 2.75vw;
+                    @include breakpoint(mobile){
+                        font-size: 7vw;
+                    }
+                    @include breakpoint(lg){
+                        font-size: 30px !important;
+                    }
+                    @include breakpoint(md){
+                        font-size: 30px !important;
+                    }
+
+                }                    
+                .last-symbol {
+                    font-size: 2.75vw;
+                    @include breakpoint(mobile){
+                        font-size: 7vw;
+                    }
+                    @include breakpoint(lg){
+                        font-size: 30px !important;
+                    }
+                    @include breakpoint(md){
+                        font-size: 30px !important;
+                    }
+                }                    
+            }
+        }
+    }
+}
+
+//TEMP - replace home modal CSS with this.
+#productComparison2.modal {
+            .modal-dialog {
+                @include breakpoint(desktop){
+                    max-width: 90%;
+                }
+                @include breakpoint(sm){
+                    max-width: 100%;
+                }
+                @include breakpoint(md){
+                    max-width: 100%;
+                }
+                @include breakpoint(lg){
+                    max-width: 100%;
+                }
+            }
+        }
+        #productComparisonMobile.modal {
+            .modal-dialog {
+                max-width: 100%;
+                .modal-body {
+                    padding-top: 0.75rem;
+                }
+                .product {
+                    padding: 15px 0;
+                    margin-bottom: 10px;
+                    h4 {
+                        color: $orange-dark;
+                    }
+                    &:nth-child(odd){
+                        background-color: $black10;
+                    }
+                    h5 {
+                        margin-bottom: 5px;
+                    }
+                    a.hasarrow {
+                    }
+                }
+            }
+        }
+        table.productComparison {
+            border-collapse: collapse;
+            background-color: $black10;
+            width: 100%;
+            tr {
+                th, td {
+                    padding: 0.5em 1em;
+                    @include breakpoint(sm){
+                        font-size: 12px;
+                    }
+                    @include breakpoint(md){
+                        font-size: 13px;
+                    }
+                    @include breakpoint(lg){
+                        font-size: 13px;
+                    }
+                    &.haslink, &.range {
+                        white-space: nowrap;
+                        @include breakpoint(md){
+                            white-space: normal;
+                        }
+                    }
+                }
+                th {
+                    padding: 1em;
+                    line-height: 1.2em;
+                    white-space: nowrap;
+                    color: $white;
+                    background-color: #23c0f1;
+                    span {
+                        display: inline-block;
+                        background: #666;
+                        color: #fff;
+                        width: 21px;
+                        height: 21px;
+                        text-align: center;
+                        border-radius: 32px;
+                        margin-left: 2px;
+                        position: relative;
+                        top: -8px;
+                    }
+                }
+                &:nth-child(even) {
+                    background-color: $white;
+                }
+            }
+        }
+        //end replace

@@ -2,20 +2,6 @@
     font-family: 'sofia-pro'; 
     h1, h2, h3 {
         font-family: 'sofia-pro';
-        span.leaf { //header eyebrow
-            display: inline-block;
-            background-color: $green-brand;
-            width: 1.5em;
-            height: 0.75em;
-            border-top-left-radius: 50px;
-            border-bottom-right-radius: 50px;
-            position: relative;
-            top: -0.5em;
-            margin-left: 0.5em;
-            @include breakpoint(mobile){
-                top: 0;
-            }   
-        }   
     }
     section {
         // padding: 60px 0px;
@@ -438,6 +424,17 @@
                 @include breakpoint(mobile){
                     font-size: 13vw;
                 }
+                @include breakpoint(lg){
+                    font-size: 65px !important;
+                    padding-top: 55px !important;
+                }
+                @include breakpoint(md){
+                    font-size: 55px !important;
+                    padding-top: 45px !important;
+                    padding-left: 50px !important;
+                    border-bottom-right-radius: 150px !important;
+                    border-top-left-radius: 150px !important;
+                }
             }
             .title-content {
                 line-height: 1.7em;
@@ -793,6 +790,17 @@
                     white-space: nowrap;
                     color: $white;
                     background-color: #23c0f1;
+                    span {
+                        display: inline-block;
+                        background: #666;
+                        color: #fff;
+                        width: 16px;
+                        height: 16px;
+                        text-align: center;
+                        border-radius: 32px;
+                        margin-left: 10px;
+                        position: relative;
+                    }
                 }
                 &:nth-child(even) {
                     background-color: $white;
