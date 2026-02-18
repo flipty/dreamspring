@@ -260,6 +260,10 @@ section.wave-blue-dark {
         // top: 175px;
         margin-top: -118px;
     }
+    div.bg-light {
+        background-color: #23c0f1 !important;
+    }
+
 }
 
 section.wave-blue-light {
@@ -290,6 +294,9 @@ section.wave-blue-light {
         position: relative;
         top: 118px;
         margin-top: -118px;
+    }
+    div.bg-light {
+        background-color: #dbf5fe !important;
     }
 }
 
@@ -591,6 +598,7 @@ section.howtoapply-module {
         }
     }
 }
+
 table.productComparison.nonmodal {
     border-collapse: collapse;
     background-color: $black10;
@@ -1095,6 +1103,49 @@ section.home-stats {
             }
         }
     }
+}
+
+section.how-to-apply {
+        .items {
+            list-style: none;
+            padding: 0;
+            margin-top: 60px;
+
+            li {
+                position: relative;
+                margin-bottom: 30px;
+
+                span {
+                    position: absolute;
+                    top: -10px;
+                    left: calc(50% - 16px);
+                    display: block;
+                    background-color: white;
+                    border: solid 2px black;
+                    border-radius: 50%;
+                    width: 32px;
+                    height: 32px;
+                    text-align: center;
+                    line-height: 29px;
+                    font-weight: bold;
+                }
+
+                img {
+                    width: 150px;
+                }
+
+                label {
+                    margin-top: 10px;
+                    font-weight: bold;
+                    display: block;
+                    em {
+                        display: block;
+                        font-size: 85%;
+                        font-style: normal;
+                    }
+                }
+            }
+        }
 }
 
 //TEMP - replace home modal CSS with this.
