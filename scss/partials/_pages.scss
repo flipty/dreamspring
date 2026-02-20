@@ -242,10 +242,19 @@ main#community {
 
 .state-landing {
   .loan-types {
+    &:after {
+      top: 178px;
+    }
     a.btn-inverse-darkbg {
       background-color: transparent;
       border: solid 2px white;
       color: white;
+    }
+  }
+  .mission-fit {
+    .slick-arrow {
+      background-color: $orange-dark;
+      color: #fff;
     }
   }
   .local-info {
@@ -316,6 +325,22 @@ main#community {
         }
       }
     }
+    .local-info-logos {
+      .partners-list {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .how-to-apply {
+    .items {
+      li {
+        span {
+          background: $blue-brand;
+          color: #fff;
+          border-color: $blue-brand;
+        }
+      }
+    }
   }
   .documents-required {
     .container.space-2 {
@@ -349,6 +374,7 @@ main#community {
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0,0,0,0.25);
         padding: 15px;
+        padding-bottom: 30px;
         background: #fff;
         margin: 0 auto;
         margin-top: 50px;
@@ -361,6 +387,24 @@ main#community {
       h3 {
         color: $orange-dark;
       }
+    }
+    .local-resources-logos {
+      margin: 0 auto;
+      margin-top: 60px;
+      width: 80%;
+      .partners-list {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .contact {
+    margin-bottom: 0;
+    input.primary.hs-button {
+      background: $orange-dark;
+      color: #fff !important;
+    }
+    label {
+      color: #fff;
     }
   }
 }
