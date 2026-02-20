@@ -95,6 +95,103 @@ section.home-hero-wave {
     }
 }
 
+section.state-hero-wave {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    margin-top: 30px;
+    @include breakpoint(mobile){
+        background-size: 100%;
+        background-color: $blue-brand;
+    }
+    .inner {
+        overflow: hidden;
+        position: relative;
+        //min-height: 720px;
+        min-height: 630px;
+        display: flex;
+        flex-flow: column-reverse;
+        @include breakpoint(mobile){
+            min-height: auto;
+        }
+        .home-hero-content {
+            // padding-bottom: 100px;
+            padding-bottom: 1vw;
+            z-index: 8;
+            .content-inner {
+                width: 100%;
+                h1, h2, h3, h4, p {
+                    color: white;
+                }
+                @include breakpoint(desktop){
+                    h1 {
+                        font-size: clamp(50px, 4vw, 99px);
+                        line-height: 1em;
+                        padding-bottom: 0;
+                    }                    
+                }
+                @include breakpoint(mobile){
+                    h1 {
+                        line-height: 1em;
+                    }
+                }
+                a.btn {
+                    position: absolute;
+                    right: 15vw;
+                    bottom: 3vw;
+                }
+            }
+        }
+        .wave {
+            position: absolute;
+            //width: 100%;
+            width: 150%;
+            // bottom: -80px;
+            bottom: -10vw;
+            left: -48vw;
+            height: 37vw;
+            z-index: 7;
+            @media (min-width: 1600px) {
+                bottom: -20vw;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &.testimonial {
+        margin-bottom: 60px;
+        .inner {
+            .home-hero-content {
+                @include breakpoint(mobile){
+                    padding-top: 185px;
+                }
+                p {
+                    margin: 0 auto;
+                    font-size: 19px;
+                    width: 55vw;
+                    line-height: 1.7em;
+                }
+                h4 {
+                    font-size: 14px;
+                    font-weight: normal;
+                    padding: 25px 0;
+                }
+            }
+            .wave {
+                bottom: -190px;
+                @media (min-width: 1600px) {
+                    bottom: -20vw;
+                }
+            }
+        }
+        a.btn {
+            background-color: rgba(0,0,0,0.25);
+            border: none;
+        }
+    }
+}
+
 a.hasarrow {
     &:after {
     content: '→';
@@ -263,7 +360,55 @@ section.wave-blue-dark {
     div.bg-light {
         background-color: #23c0f1 !important;
     }
+    > h1, h2, h3 {
+        color: #FFF;
+    }
+}
 
+.home_product_tabs_hubdb {
+    .bg-light {
+        .container {
+            padding-bottom: 0 !important;
+            padding-top: 0 !important;
+            .nav-box {
+                @include breakpoint(mobile){
+                    justify-content: center;
+                }
+                .nav-item.w-100.mx-0 {
+                    @include breakpoint(mobile){
+                        width: 50% !important;
+                        a {
+                            padding: 1rem !important;
+                        }
+                    }
+                }
+                a.nav-link.active {
+                    h4 {
+                    color: #222 !important;
+                    }   
+                }
+                .nav-item {
+                    border-top: solid 1px $black10;
+                    @include breakpoint(mobile){
+                        border: none;
+                        h4 {
+                            @include breakpoint(mobile){
+                            font-size: 17px;
+                            text-align: center;
+                            color: #fff;
+                            }
+                        }
+                    }
+                    h4 {
+                        color: #fff !important;
+                    }
+                    &:first-child {
+                        border-top: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 section.wave-blue-light {
