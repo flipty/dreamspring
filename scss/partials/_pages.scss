@@ -524,3 +524,154 @@ main#community {
         }
     }
 }
+
+.book-landing {
+  p {
+    line-height: 1.7em;
+  }
+  .book-intro {
+    &:after {
+      top: 175px;
+    }
+    .intro-content {
+      color: #fff;
+      h1 {
+        color: #fff;
+        font-size: 4rem;
+        line-height: 2.75rem;
+        margin-bottom: 30px;
+        span.eyebrow {
+          display: block;
+          font-size: 50%;
+        }
+      }
+    }
+    .intro-image {
+      margin: -50px 0 -100px 0;
+      img {
+        max-width: 100%;
+        position: relative;
+        z-index: 99;
+      }
+    }
+  }
+  .book-about {
+
+  }
+  .book-authors {
+    .author-carousel {
+      .card-body {
+        padding: 5px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+      }
+    }
+    .author-bios {
+      > div img {
+        max-width: 150px;
+        margin: 0 auto;
+        border-radius: 50%;
+      }
+    }
+  }
+  .book-buy {
+    .buy-options {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      .buy {
+        width: 30%;
+        border-radius: 8px;
+        background: #FFF;
+        box-shadow: 0 0 10px rgba(0,0,0,0.25);
+        text-align: center;
+        padding: 15px;
+        margin: 15px;
+        margin-bottom: 30px;
+        @include breakpoint(mobile){
+          width: 90%;
+        }
+        img {
+          margin-bottom: 15px;
+          display: block;
+          margin: 0 auto;
+        }
+        a {
+          display: block;
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .book-preorder-bonus {
+    .book-preorder-bonus-content {
+      color: #fff;
+      h2 {
+        color: #fff;
+        font-size: 3rem;
+        line-height: 2.75rem;
+        margin-bottom: 30px;
+        span.eyebrow {
+          display: block;
+          font-size: 50%;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+    .bonus-form-container {
+      background: $black25;
+      color: #fff;
+      border-radius: 4px;
+      @include breakpoint(mobile){
+        margin-top: 60px;
+      }
+      h3 {
+        display: block;
+        background: $green-brand;
+        color: #FFF;
+        width: calc(100% - 60px);
+        margin: 0 auto;
+        margin-top: -20px;
+        text-align: center;
+        padding: 15px 0;
+        position: relative;
+        top: -30px;
+      }
+      .hsfc-Step__Content {
+        padding-top: 0;
+        label, p, span, p span {
+          color: #FFF !important;
+          font-family: 'sofia-pro', sans-serif;
+        }
+        .hsfc-ErrorAlert {
+          background: #FFF;
+          text-align: center;
+          padding: 5px 0;
+        }
+      }
+    }
+    &:after {
+      top: 175px; 
+    }
+  }
+  .book-preorder {
+   img {
+    max-width: 100%;
+   } 
+  }
+
+  .book-updates {
+
+  }
+  
+  .book-event {
+    margin-bottom: 0;
+    img {
+      max-width: 100%;
+    }
+  }
+}
