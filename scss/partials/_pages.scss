@@ -675,3 +675,18 @@ main#community {
     }
   }
 }
+
+.product-vertical-detail {
+  .product-1 {
+    
+  }
+
+  .product-2 {
+    margin-top: 0;
+    &:after {
+      @include breakpoint(desktop){
+        top: 175px;
+      }
+    }
+  }
+}
