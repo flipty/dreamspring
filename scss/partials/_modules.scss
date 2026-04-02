@@ -1308,92 +1308,93 @@ section.how-to-apply {
 
 //TEMP - replace home modal CSS with this.
 #productComparison2.modal {
-            .modal-dialog {
-                @include breakpoint(desktop){
-                    max-width: 90%;
-                }
-                @include breakpoint(sm){
-                    max-width: 100%;
-                }
+    .modal-dialog {
+        @include breakpoint(desktop){
+            max-width: 90%;
+        }
+        @include breakpoint(sm){
+            max-width: 100%;
+        }
+        @include breakpoint(md){
+            max-width: 100%;
+        }
+        @include breakpoint(lg){
+            max-width: 100%;
+        }
+    }
+}
+
+#productComparisonMobile.modal {
+    .modal-dialog {
+        max-width: 100%;
+        .modal-body {
+            padding-top: 0.75rem;
+        }
+        .product {
+            padding: 15px 0;
+            margin-bottom: 10px;
+            h4 {
+                color: $orange-dark;
+            }
+            &:nth-child(odd){
+                background-color: $black10;
+            }
+            h5 {
+                margin-bottom: 5px;
+            }
+            a.hasarrow {
+            }
+        }
+    }
+}
+
+table.productComparison {
+    border-collapse: collapse;
+    background-color: $black10;
+    width: 100%;
+    tr {
+        th, td {
+            padding: 0.5em 1em;
+            @include breakpoint(sm){
+                font-size: 12px;
+            }
+            @include breakpoint(md){
+                font-size: 13px;
+            }
+            @include breakpoint(lg){
+                font-size: 13px;
+            }
+            &.haslink, &.range {
+                white-space: nowrap;
                 @include breakpoint(md){
-                    max-width: 100%;
-                }
-                @include breakpoint(lg){
-                    max-width: 100%;
+                    white-space: normal;
                 }
             }
         }
-        #productComparisonMobile.modal {
-            .modal-dialog {
-                max-width: 100%;
-                .modal-body {
-                    padding-top: 0.75rem;
-                }
-                .product {
-                    padding: 15px 0;
-                    margin-bottom: 10px;
-                    h4 {
-                        color: $orange-dark;
-                    }
-                    &:nth-child(odd){
-                        background-color: $black10;
-                    }
-                    h5 {
-                        margin-bottom: 5px;
-                    }
-                    a.hasarrow {
-                    }
-                }
+        th {
+            padding: 1em;
+            line-height: 1.2em;
+            white-space: nowrap;
+            color: $white;
+            background-color: #23c0f1;
+            span {
+                display: inline-block;
+                background: #666;
+                color: #fff;
+                width: 21px;
+                height: 21px;
+                text-align: center;
+                border-radius: 32px;
+                margin-left: 2px;
+                position: relative;
+                top: -8px;
             }
         }
-        table.productComparison {
-            border-collapse: collapse;
-            background-color: $black10;
-            width: 100%;
-            tr {
-                th, td {
-                    padding: 0.5em 1em;
-                    @include breakpoint(sm){
-                        font-size: 12px;
-                    }
-                    @include breakpoint(md){
-                        font-size: 13px;
-                    }
-                    @include breakpoint(lg){
-                        font-size: 13px;
-                    }
-                    &.haslink, &.range {
-                        white-space: nowrap;
-                        @include breakpoint(md){
-                            white-space: normal;
-                        }
-                    }
-                }
-                th {
-                    padding: 1em;
-                    line-height: 1.2em;
-                    white-space: nowrap;
-                    color: $white;
-                    background-color: #23c0f1;
-                    span {
-                        display: inline-block;
-                        background: #666;
-                        color: #fff;
-                        width: 21px;
-                        height: 21px;
-                        text-align: center;
-                        border-radius: 32px;
-                        margin-left: 2px;
-                        position: relative;
-                        top: -8px;
-                    }
-                }
-                &:nth-child(even) {
-                    background-color: $white;
-                }
-            }
+        &:nth-child(even) {
+            background-color: $white;
         }
-        //end replace
+    }
+}
 
 .mission-slider {
     .mission-item {
@@ -1440,7 +1441,5 @@ section.how-to-apply {
         }
 
     }
-
-
 }
 
