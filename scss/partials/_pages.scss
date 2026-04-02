@@ -274,7 +274,8 @@ main#community {
           font-size: clamp(50px, 4vw, 100px);
         }
         @include breakpoint(mobile){
-          font-size: 13vw;
+          font-size: 10vw;
+          padding: 1em 1em 0.65em 2em;
         }
         @include breakpoint(lg){
           font-size: 50px !important;
@@ -293,6 +294,16 @@ main#community {
         line-height: 1.7em;
         @include breakpoint(desktop){
             //padding-left: 30px;                    
+        }
+        @include breakpoint(mobile){
+          ul {
+            padding-left: 15px;
+            li {
+              p {
+                text-align: left;
+              }
+            }
+          }
         }
       }
     }

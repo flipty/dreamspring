@@ -189,8 +189,18 @@ section.state-hero-wave .inner .home-hero-content .content-inner h1, section.sta
 }
 
 @media only screen and (max-width: 1023px) {
+  section.state-hero-wave .inner .home-hero-content .content-inner {
+    margin-top: 160px;
+  }
   section.state-hero-wave .inner .home-hero-content .content-inner h1 {
     line-height: 1em;
+    font-size: 32px;
+    text-align: center;
+  }
+  section.state-hero-wave .inner .home-hero-content .content-inner h2 {
+    line-height: 1em;
+    font-size: 20px;
+    text-align: center;
   }
 }
 
@@ -198,6 +208,14 @@ section.state-hero-wave .inner .home-hero-content .content-inner a.btn {
   position: absolute;
   right: 15vw;
   bottom: 3vw;
+}
+
+@media only screen and (max-width: 1023px) {
+  section.state-hero-wave .inner .home-hero-content .content-inner a.btn {
+    position: static;
+    margin-bottom: 1rem;
+    display: block;
+  }
 }
 
 section.state-hero-wave .inner .wave {
@@ -1630,6 +1648,60 @@ table.productComparison tr:nth-child(even) {
   background-color: #ffffff;
 }
 
+.mission-slider .mission-item {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  height: 250px;
+  text-align: center;
+}
+
+.mission-slider .mission-item .separator {
+  width: 1px;
+  background: #ccc;
+}
+
+.mission-slider .mission-item .title {
+  display: block;
+  border-radius: 6px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.mission-slider .mission-item .item-left {
+  width: 45%;
+}
+
+.mission-slider .mission-item .item-left .title {
+  background: #f15a29;
+}
+
+.mission-slider .mission-item .item-right {
+  width: 45%;
+}
+
+.mission-slider .mission-item .item-right .title {
+  background: #8fc741;
+}
+
+.mission-slider .mission-item p {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1023px) {
+  .mission-slider .mission-item p {
+    font-size: 14px;
+  }
+}
+
 section.stripe-blue {
   background: #dbf5fe;
 }
@@ -1927,7 +1999,8 @@ main#community .community-regional-cards .item__options {
 
 @media only screen and (max-width: 1023px) {
   .state-landing .local-info .local-info-content h2 {
-    font-size: 13vw;
+    font-size: 10vw;
+    padding: 1em 1em 0.65em 2em;
   }
 }
 
@@ -1951,6 +2024,15 @@ main#community .community-regional-cards .item__options {
 .state-landing .local-info .local-info-content .title-content {
   margin-top: 30px;
   line-height: 1.7em;
+}
+
+@media only screen and (max-width: 1023px) {
+  .state-landing .local-info .local-info-content .title-content ul {
+    padding-left: 15px;
+  }
+  .state-landing .local-info .local-info-content .title-content ul li p {
+    text-align: left;
+  }
 }
 
 .state-landing .local-info .local-info-map img {
@@ -2384,6 +2466,16 @@ main#community .community-regional-cards .item__options {
 
 .book-landing .book-event img {
   max-width: 100%;
+}
+
+.product-vertical-detail .product-2 {
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .product-vertical-detail .product-2:after {
+    top: 175px;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
