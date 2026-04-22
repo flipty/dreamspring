@@ -1,0 +1,252 @@
+main.annual-report-2025 {
+    .home-hero-wave {
+        .inner .home-hero-content {
+            .content-inner {
+                h1 {
+                    @include breakpoint(mobile){
+                        padding-top: 150px;
+                    }
+                }
+            }
+        }
+    }
+    .client-story {
+        padding: 60px 0;
+        .item {
+            box-shadow: 0 0 20px $black15;
+            background-color: white;
+            border-radius: 8px;
+            //margin-bottom: 30px;
+            margin: 30px 0;
+            .inner {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                @include breakpoint(mobile){
+                    display: block;
+                }
+                .photo {
+                    width: 50%;
+                    @include breakpoint(mobile){
+                        width: 100%;
+                    }
+                    img {
+                        border-top-left-radius: 8px;
+                        border-bottom-left-radius: 8px;
+                        max-width: 100%;
+                        @include breakpoint(mobile){
+                            border-top-right-radius: 8px;
+                            border-bottom-left-radius: 0;
+                        }
+                    }
+                }
+                .content {
+                    width: 50%;
+                    @include breakpoint(mobile){
+                        width: 100%;
+                    }
+                    .inner {
+                        padding: 60px;
+                        @include breakpoint(mobile){
+                            padding: 30px;
+                        }
+                    }
+                }
+                &.image-right {
+                    flex-flow: row-reverse wrap;
+                    .photo {
+                        img {
+                        border-top-right-radius: 8px;
+                        border-bottom-right-radius: 8px;
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                        @include breakpoint(mobile){
+                            border-top-left-radius: 8px;
+                            border-bottom-left-radius: 0;
+                            border-bottom-right-radius: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .community-impact {
+        color: white;
+        @include breakpoint(desktop){
+            margin-top: 60px;
+            margin-bottom: 0;
+        }
+        &:after {
+            @include breakpoint(desktop){
+                top: 177px;
+            }
+        }
+        .info-block {
+            background: $green-brand;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            border-radius: 16px;
+            .photo1 {
+                @include breakpoint(desktop){
+                    width: 29%;
+                }                
+                img {
+                    max-width: 100%;
+                    border-top-left-radius: 16px;
+                    border-bottom-left-radius: 16px;
+                    @include breakpoint(mobile){
+                        border-top-right-radius: 16px;
+                        border-bottom-left-radius: 0;
+                    }
+                }
+            }
+            .info-content {
+                @include breakpoint(desktop){
+                    width: 42%;
+                }
+                .inner {
+                    padding: 30px;
+                }
+                span.total {
+                    display: block;
+                    font-size: 120px;
+                    color: white;
+                    font-weight: 600;
+                    letter-spacing: -0.05em;
+                    @include breakpoint(desktop){
+                        line-height: 100px;
+                        padding-bottom: 27px;
+                        margin-top: -15px;
+                    }
+                    @include breakpoint(mobile){
+                        font-size: 100px;
+                    }
+                }
+            }
+            .photo2 {
+                @include breakpoint(desktop){
+                    width: 29%;
+                }                
+                img {
+                    max-width: 100%;
+                    border-top-right-radius: 16px;
+                    border-bottom-right-radius: 16px;
+                    @include breakpoint(mobile){
+                        border-top-right-radius: 0;
+                        border-bottom-left-radius: 16px;
+                    }
+                }
+            }
+
+        }
+        .btn {
+            margin-top: 30px;
+            color: white;
+            border: solid 3px white;
+            line-height: 1em;
+            padding: 0.5em 3em 0.65em 3em;
+        }
+    }
+    .milestones-list {
+        ul {
+            padding: 0;
+            li {
+                background: white;
+                border-radius: 8px;
+                margin-bottom: 15px;
+                padding: 15px;
+                div.media {
+                    margin-bottom: 0 !important;
+                    display: flex;
+                    flex-flow: row;
+                    align-items: center;
+                    span.icon {
+                        &.icon-xs {
+                            width: auto;
+                            height: auto;
+                            font-size: 0.25rem;
+                        }
+                        .w-10r {
+                            width: auto !important;
+                        }
+                        svg {
+                            width: 50px;
+                            @include breakpoint(mobile){
+                                width: 30px;
+                            }
+                        }
+                    }
+                    div.media-body {
+                        font-size: 26px;
+                        padding-left: 15px;
+                        @include breakpoint(mobile){
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .gift {
+        @include breakpoint(desktop){
+            padding-bottom: 0;
+        }
+        .gift_levels {
+            .bg-light {
+                .container {
+                    padding-top: 0 !important;
+                    .nav {
+                        a {
+                            .media-body {
+                                color: #FFF;
+                                h4.mb-0 {
+                                    color: #FFF !important;
+                                }
+                            }
+                            &.active {
+                                .media-body {
+                                    color: #000;
+                                }
+                                h4.mb-0 {
+                                    color: #000 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .donate {
+        h2.main-headline {
+            @include breakpoint(desktop){
+                font-size: 42px;
+            }
+        }
+        .donate-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 0 10px $black15;
+            .donate-image {
+                img {
+                    max-width: 100%;
+                    border-top-right-radius: 16px;
+                    border-top-left-radius: 16px;
+                }
+            }
+            .donate-flourish {
+                margin-top: -50px;
+                text-align: left;
+                margin-left: 50px;
+                img {
+                    width: 100px !important;
+                }
+            }
+            .donate-content {
+                padding: 30px;
+            }
+        }
+    }
+}
