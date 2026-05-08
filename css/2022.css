@@ -5,6 +5,10 @@
 
 pre { font-size: 11px; white-space: normal; }
 
+@media only screen and (min-width: 1024px) { header#header nav.navbar div#navBar ul.navbar-nav li.navbar-nav-item .nav-link { font-size: 13px; padding-left: 0.5rem; padding-right: 0.5rem; } }
+
+header#header nav.navbar div#navBar ul.navbar-nav li.navbar-nav-last-item a.btn { white-space: nowrap !important; }
+
 section.home-hero-wave { background-size: cover; background-repeat: no-repeat; padding-bottom: 0; margin-top: 30px; }
 
 @media only screen and (max-width: 1023px) { section.home-hero-wave { background-size: 100%; background-color: #22c0f0; } }
@@ -2197,8 +2201,6 @@ nav.no-menu button.navbar-toggler { display: none; }
   nav.no-menu.has-text-header h1 { line-height: 1em; margin-bottom: 15px; } }
 
 .btn-xl { padding: 1.125rem 1.125rem; font-size: 1.75rem; line-height: 1.5; border-radius: 0.75rem; }
-
-@media only screen and (min-width: 993px) and (max-width: 1199px) { #navBar .navbar-nav .nav-link { font-size: 12px; } }
 
 #hs_cos_wrapper_widget_1703179498305 { text-align: center; }
 

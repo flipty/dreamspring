@@ -1,3 +1,26 @@
+header#header {
+    nav.navbar {
+        div#navBar {
+            ul.navbar-nav {
+                li.navbar-nav-item {
+                    .nav-link {
+                        @include breakpoint(desktop){
+                            font-size: 13px;
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                        }
+                    }
+                }
+                li.navbar-nav-last-item {
+                    a.btn {
+                        white-space: nowrap !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
 section.home-hero-wave {
     background-size: cover;
     background-repeat: no-repeat;

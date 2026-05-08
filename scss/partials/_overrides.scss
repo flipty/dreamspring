@@ -46,12 +46,6 @@ nav.no-menu {
     border-radius: 0.75rem;
 }
 
-@include breakpoint(lg){
-    #navBar .navbar-nav .nav-link {
-        font-size: 12px;
-    }
-}
-
 #hs_cos_wrapper_widget_1703179498305 { //button on Business Loans page
     text-align: center;
 }
