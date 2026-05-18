@@ -33,15 +33,17 @@ section.home-hero-wave {
     .inner {
         overflow: hidden;
         position: relative;
-        min-height: 720px;
+        min-height: 500px;
+        min-height: 36vw;
         display: flex;
         flex-flow: column-reverse;
         @include breakpoint(mobile){
             min-height: auto;
         }
+
         .home-hero-content {
             // padding-bottom: 100px;
-            padding-bottom: 4vw;
+            padding-bottom: 1vw;
             z-index: 8;
             .content-inner {
                 width: 100%;
@@ -73,12 +75,11 @@ section.home-hero-wave {
         .wave {
             position: absolute;
             width: 100%;
-            // bottom: -80px;
-            bottom: -10vw;
+            bottom: -22vw;
             height: 37vw;
             z-index: 7;
             @media (min-width: 1600px) {
-                bottom: -20vw;
+                //bottom: -20vw;
             }
             img {
                 width: 100%;
