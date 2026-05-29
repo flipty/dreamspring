@@ -1508,3 +1508,87 @@ table.productComparison {
     }
 }
 
+.awards-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    justify-items: center;
+    margin-bottom: 60px;
+    .award {
+        width: 22%;
+        text-align: center;
+        margin-bottom: 30px;
+        img {
+            max-width: 90%;
+            max-height: 200px;
+            margin: 0 auto;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            height: 100%;
+        }
+    }
+}
+
+.anchor-link-bar {
+    .link-row {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-items: center;
+        @include breakpoint(mobile){
+            display: block;
+        }
+        .link {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            min-height: 120px;
+            border-left: solid 1px #ccc;
+            img {
+                max-width: 200px;
+                border-radius: 50%;
+            }
+            .headline {
+                display: block;
+                font-size: 28px;
+                line-height: 1.1em;
+                text-align: center;
+                padding-bottom: 0.5em;
+                padding-top: 0.25em;
+            }
+            @include breakpoint(mobile){
+                display: block;
+                border: none;
+                min-height: auto;
+                width: 100% !important; 
+            }
+            a {
+                display: block;
+                font-size: 20px;
+                text-align: center;
+                color: #666;
+                width: 100%;
+                padding: 15px 15px;
+                @include breakpoint(mobile){
+                    font-size: 14px;
+                    margin-bottom: 15px;
+                    padding-bottom: 15px;
+                    border-bottom: solid 1px #ccc;
+                }
+            }
+            &:first-child {
+                border: none;
+            }
+        }
+        &.items-1 .link { width: 100%;  }
+        &.items-2 .link { width: 50%;   }
+        &.items-3 .link { width: 33%;   }
+        &.items-4 .link { width: 25%;   }
+        &.items-5 .link { width: 20%;   }
+    }
+}
+
