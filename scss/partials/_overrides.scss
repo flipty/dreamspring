@@ -1,3 +1,4 @@
+@use 'variables' as *;
 .pre-header {
     width: 100%;
     background-color: #8fc741;
@@ -27,7 +28,7 @@ nav.no-menu {
                 margin-right: 30px;
             }            
         }
-        @include breakpoint(mobile){
+        @include breakpoint(mobile){ 
             h1, h2, h3, p {
                 text-align: center !important;
             }
@@ -43,7 +44,7 @@ nav.no-menu {
     padding: 1.125rem 1.125rem;
     font-size: 1.75rem;
     line-height: 1.5;
-    border-radius: 0.75rem;
+    border-radius: 0.75rem; 
 }
 
 #hs_cos_wrapper_widget_1703179498305 { //button on Business Loans page
