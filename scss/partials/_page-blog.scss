@@ -1,5 +1,42 @@
 @use 'variables' as *;
 .news-listing {
+    .general-tag-nav { 
+        ul {
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            padding: 0;
+            justify-content: center;
+            li {
+                list-style: none;       
+                margin: 0 7.5px;         
+                margin-bottom: 15px;
+                a {
+                    display: block;
+                    text-align: center;
+                    padding: 0.25em 0.5em;
+                    border: solid 1px $black50;
+                    border-radius: 3px;
+                    white-space: nowrap;
+                    font-size: 14px;
+                    color: #999;
+                    &:hover {
+                        color: $orange-dark;
+                        border-color: $orange-dark;
+                    }
+                }
+                display: none; //hides all others...
+                &.tagid-218121319865,
+                &.tagid-218121319845,
+                &.tagid-218121553075,
+                &.tagid-218121553169,
+                &.all-topics 
+                {
+                    display: block;//shows only the ones we choose
+                }
+            }
+        }
+    }
     .featured-post {
         .card {
             display: flex;
